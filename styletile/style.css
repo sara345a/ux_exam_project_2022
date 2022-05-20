@@ -169,8 +169,8 @@ header {
     text-align: center;
     border: none;
     background-size: 300% 100%;
-    background-image: linear-gradient(to right, #a4d761, #91bd58, #98c75b, #a4d761);
-
+    background-image: linear-gradient(to right, #a4d761, #a4d761, #98c75b, #a4d761);
+    box-shadow: 0 2px 15px rgba(36, 94, 35, 0.4);
     border-radius: 50px;
     transition: all .4s ease-in-out;
 
