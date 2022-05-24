@@ -1063,11 +1063,20 @@ footer a:hover {
 /*                   ANNONCES                */
 /*-------------------------------------------*/
 
+@media only screen and (max-width: 1024px) {
+    .add-sidebars-horisontal {
+        padding-top: 40px;
+    }
 
+}
 
 
 /*desktop adds*/
 @media only screen and (min-width: 1024px) {
+    .add-sidebars-horisontal {
+        display: none;
+    }
+
     .add-sidebars {
         display: block;
     }
