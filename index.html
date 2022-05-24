@@ -15,15 +15,24 @@
     <header>
         <div id="mobile_navbar">
             <nav id="mobile_navigation">
-                <a href="#"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                 <div class="mobile_navigation__links">
                     <button type="button" class="mobile_navigation__icons" onclick="toggleHideSearchModal()">
                         <i class=" fa-solid fa-magnifying-glass" id="search-modal"></i>
                     </button>
+                    <div class="dropdown">
+                        <button type="button" class="mobile_navigation__icons">
+                            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                        <div class="user-dropdown-content">
+                            <div class="user-dropdown-content__links">
+                                <a href="login.html">Log in</a>
+                                <div class="breakline"></div>
+                                <a href="signup.html">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
 
-                    <button type="button" class="mobile_navigation__icons">
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                    </button>
                     <div>
                         <button type="button" class="mobile_navigation__icons" onclick="toggleHideBurgermenu()">
                             <i class="fa-solid fa-bars"></i>
@@ -36,21 +45,22 @@
                 <button type="button" class="close-bugermenu" onclick="toggleHideBurgermenu()">Close menu</button>
                 <hr>
                 <ul id="overlay__content">
-                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
                     <hr>
-                    <li><a href="#">Lunch</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
                     <hr>
-                    <li><a href="#">Dinner</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
                     <hr>
-                    <li><a href="#">Snack</a></li>
+                    <li><a href="snack.html">Snack</a></li>
                     <hr>
-                    <li><a href="#">Dessert</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
                     <hr>
                     <div class="link-wrapper">
-                        <li><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
-                        <li><a href="#"><i class="fa-solid fa-circle-info"></i>About us</a></li>
+                        <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                        <li><a href="about_us.html"><i class="fa-solid fa-circle-info"></i>About us</a></li>
                     </div>
                     <hr>
+
                 </ul>
                 <div class="mobile-navigation__search">
                     <input type="text" placeholder="Search..">
@@ -69,7 +79,7 @@
 
         <div id="desktop_navbar">
             <nav id="desktop_navigation">
-                <a href="#"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                 <div class="desktop_navigation__textlinks">
                     <nav>
                         <ul>
@@ -79,8 +89,8 @@
                                         onclick="toggleHideMegaMenu()"></i>
                                 </a>
                             </li>
-                            <li><a href="">Tips & Tricks</a></li>
-                            <li><a href="">About us</a></li>
+                            <li><a href="tipsandtricks.html">Tips & Tricks</a></li>
+                            <li><a href="about_us.html">About us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,9 +99,21 @@
                         <i class=" fa-solid fa-magnifying-glass" id="search-modal"></i>
                     </button>
 
-                    <button type="button" class="desktop_navigation__icons">
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                    </button>
+                    <div class="dropdown">
+                        <button type="button" class="desktop_navigation__icons">
+                            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                        <div class="user-dropdown-content">
+                            <div class="user-dropdown-content__links">
+                                <a href="login.html">Log in</a>
+                                <div class="breakline"></div>
+                                <a href="signup.html">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
             </nav>
@@ -99,35 +121,35 @@
             <nav id="desktop-navbar__mega-menu" class="hide">
                 <div class="mega-menu__recipe-container">
                     <h3>Breakfast</h3>
-                    <a href="#">
+                    <a href="breakfast.html">
                         <img src="./assets/breakfast.jpg" alt="breakfast">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Lunch</h3>
-                    <a href="#">
+                    <a href="lunch.html">
                         <img src="./assets/lunch.jpg" alt="lunch">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Dinner</h3>
-                    <a href="#">
+                    <a href="dinner.html">
                         <img src="./assets/dinner.jpg" alt="dinner">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Snack</h3>
-                    <a href="#">
+                    <a href="snack.html">
                         <img src="./assets/snack.jpg" alt="snack">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Dessert</h3>
-                    <a href="#">
+                    <a href="dessert.html">
                         <img src="./assets/dessert.jpg" alt="dessert">
                     </a>
                 </div>
@@ -178,7 +200,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>155</p>
                             </div>
-                            <a href="#">
+                            <a href="burger.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -207,7 +229,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>155</p>
                             </div>
-                            <a href="#">
+                            <a href="greensmoothie.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -236,7 +258,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>155</p>
                             </div>
-                            <a href="#">
+                            <a href="lasagne.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -265,7 +287,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>155</p>
                             </div>
-                            <a href="#">
+                            <a href="saladbowl.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -287,6 +309,7 @@
                 </div>
 
             </div>
+            <a name='mostpopular'></a>
         </section>
 
         <section class="carousel-belt">
@@ -300,7 +323,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>2</p>
                             </div>
-                            <a href="#">
+                            <a href="mangojuice.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -329,7 +352,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>15</p>
                             </div>
-                            <a href="#">
+                            <a href="nachos.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -358,7 +381,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>5</p>
                             </div>
-                            <a href="#">
+                            <a href="steak.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -387,7 +410,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>3</p>
                             </div>
-                            <a href="#">
+                            <a href="waffles.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -408,6 +431,7 @@
                     </div>
                 </div>
             </div>
+            <a name='newest'></a>
         </section>
 
         <section class="carousel-belt">
@@ -421,7 +445,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>1255</p>
                             </div>
-                            <a href="#">
+                            <a href="pizza.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -450,7 +474,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>1555</p>
                             </div>
-                            <a href="#">
+                            <a href="sushi.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -479,7 +503,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>1865</p>
                             </div>
-                            <a href="#">
+                            <a href="tomatobread.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -508,7 +532,7 @@
                                 <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                                 <p>2000</p>
                             </div>
-                            <a href="#">
+                            <a href="whitebread.html">
                                 <div class="item__top">
                                     <div class="item__overlay">
                                     </div>
@@ -529,6 +553,7 @@
                     </div>
                 </div>
             </div>
+            <a name='bestrated'></a>
         </section>
     </main>
 
@@ -542,7 +567,7 @@
                     </p>
                 </div>
                 <div class="newsletter__bottom">
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Email">bestrated
                     <button type="button">Subscribe to newsletter</button>
                 </div>
             </section>
@@ -555,9 +580,9 @@
                         <h4>Recipes</h4>
                         <nav>
                             <ul>
-                                <li><a href="#">Most popular</a></li>
-                                <li><a href="#">Most liked</a></li>
-                                <li><a href="#">Best rated</a></li>
+                                <li><a href="index.html#mostpopular">Most popular</a></li>
+                                <li><a href="index.html#newst">Newest</a></li>
+                                <li><a href="index.html#bestrated">Best rated</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -565,9 +590,9 @@
                         <h4>Links</h4>
                         <nav>
                             <ul>
-                                <li><a href="#">Log in</a></li>
-                                <li><a href="#">Sign up</a></li>
-                                <li><a href="#">Profile</a></li>
+                                <li><a href="login.html">Log in</a></li>
+                                <li><a href="signup.html">Sign up</a></li>
+                                <li><a href="profile.html">Profile</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -575,9 +600,9 @@
                         <h4>Contact</h4>
                         <nav>
                             <ul>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="about_us.html">Contact us</a></li>
+                                <li><a href="about_us.html">About us</a></li>
+                                <li><a href="about_us.html">Careers</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -603,9 +628,9 @@
                         <h3>Recipes</h3>
                         <nav>
                             <ul>
-                                <li><a href="#">Most popular</a></li>
-                                <li><a href="#">Most liked</a></li>
-                                <li><a href="#">Best rated</a></li>
+                                <li><a href="index.html#mostpopular">Most popular</a></li>
+                                <li><a href="index.html#newest">Newest</a></li>
+                                <li><a href="index.html#bestrated">Best rated</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -613,9 +638,9 @@
                         <h3>Links</h3>
                         <nav>
                             <ul>
-                                <li><a href=" #">Log in</a></li>
-                                <li><a href="#">Sign up</a></li>
-                                <li><a href="#">Profile</a></li>
+                                <li><a href="login.html">Log in</a></li>
+                                <li><a href="signup.html">Sign up</a></li>
+                                <li><a href="profile.html">Profile</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -623,16 +648,16 @@
                         <h3>Contact</h3>
                         <nav>
                             <ul>
-                                <li><a href=" #">Contact us</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="about_us.html">Contact us</a></li>
+                                <li><a href="about_us.html">About us</a></li>
+                                <li><a href="about_us.html">Careers</a></li>
                             </ul>
                         </nav>
                     </div>
                 </section>
                 <section class="desktop-footer__section2">
                     <div class="section2__logo">
-                        <a href="#"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                        <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                     </div>
                 </section>
                 <section class="desktop-footer__section3">
