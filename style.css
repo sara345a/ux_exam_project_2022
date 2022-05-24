@@ -544,6 +544,7 @@ nav#desktop_navigation {
     height: auto;
     width: 100%;
     position: relative;
+    height: 215px;
 }
 
 .item__image {
@@ -551,6 +552,7 @@ nav#desktop_navigation {
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
+    overflow: hidden;
 }
 
 .item__image img {
