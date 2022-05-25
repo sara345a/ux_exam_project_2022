@@ -1,0 +1,37 @@
+@import url("../styles/style.css");
+
+#about_us-page main {
+    padding: 9% 9%;
+}
+
+#about_us-page .contact-container {
+    padding: 0 9% 15px 9%;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#about_us-page .contact-container .contact-telephone, #about_us-page .contact-container .contact-email, #about_us-page .contact-container .contact-address {
+    margin-top: 15px;
+}
+
+#about_us-page .contact-container .contact-telephone a, #about_us-page .contact-container .contact-email a, #about_us-page .contact-container .contact-address {
+    display: flex;
+    flex-direction: row;
+}
+
+#about_us-page .contact-container .contact-telephone i, #about_us-page .contact-container .contact-email i , #about_us-page .contact-container .contact-address i {
+margin-right: 10%;
+}
+
+
+/*---------Tablet--------*/
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*--------Desktop------*/
+@media only screen and (min-width: 1024px) { 
+
+}
