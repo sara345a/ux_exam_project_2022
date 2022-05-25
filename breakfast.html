@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspiEats - Breakfasr recipes</title>
-    <link rel="stylesheet" href="./styles/breakfast.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/breakfast.css">
+
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -185,17 +186,81 @@
             <p>All recipes for breakfast uploadet by other users</p>
         </section>
 
+        <section class="submenu">
+            <div class="category-belt">
+                <div class="category-belt__items">
+                    <div class="category-belt__item">
+
+                        <a href="">
+                            <img src="./assets/breakfast-category/pastries.jpg" alt="pastries">
+                        </a>
+                        <h3>Pastries</h3>
+                    </div>
+
+                    <div class="category-belt__item">
+
+                        <a href="">
+                            <img src="./assets/breakfast-category/oats.jpg" alt="Oats">
+                        </a>
+                        <h3>Oats</h3>
+                    </div>
+
+                    <div class="category-belt__item">
+
+                        <a href="">
+                            <img src="./assets/breakfast-category/juices.jpg" alt="Juices">
+                        </a>
+                        <h3>Juices/Smoothies</h3>
+                    </div>
+
+                    <div class="category-belt__item">
+
+                        <a href="">
+                            <img src="./assets/breakfast-category/pancakes.jpg" alt="Pancakes/Waffles">
+                        </a>
+                        <h3>Pancakes/Waffles</h3>
+                    </div>
+
+                    <div class="category-belt__item">
+
+                        <a href="">
+                            <img src="./assets/breakfast-category/toppings.jpg" alt="Toppings">
+                        </a>
+                        <h3>Toppings</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="filter-and-sort">
+            <div class="advanced-filter">
+                <label for="advanved-filter">
+                    <button class="advanced-filter__button">
+                        <i class="fa-solid fa-filter" name="advanced-filter"></i>
+                    </button>
+                    Filter
+                </label>
+            </div>
 
+            <div class="sort-filter">
+                <label for="sort">
+                    Sort by
+                    <select name="sort" id="sort">
+                        <option value="name">Newst</option>
+                        <option value="name">Most popular</option>
+                        <option value="name">Name: A-Z</option>
+                        <option value="price">Name: Z-A</option>
+                        <option value="date">Ratings: Low - High</option>
+                        <option value="date">Ratings: High - Low</option>
+                    </select>
+                </label>
+            </div>
         </section>
+        <hr>
 
-        <section class="filter-and-sort">
 
-        </section>
 
-        <section class="sub-menu">
-
-        </section>
 
         <section class="carousel-belt">
             <h3>Popular now</h3>
@@ -587,7 +652,7 @@
                     </p>
                 </div>
                 <div class="newsletter__bottom">
-                    <input type="text" placeholder="Email">bestrated
+                    <input type="text" placeholder="Email">
                     <button type="button">Subscribe to newsletter</button>
                 </div>
             </section>
