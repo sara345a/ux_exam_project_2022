@@ -1,7 +1,15 @@
 @import url("../styles/style.css");
 
+#about_us-page #contact-tablet-desktop {
+    display: none;
+}
+
 #about_us-page main {
     padding: 9% 9%;
+}
+
+#about_us-page h1 {
+    padding-bottom: 5%;
 }
 
 #about_us-page .contact-container {
@@ -21,17 +29,58 @@
 }
 
 #about_us-page .contact-container .contact-telephone i, #about_us-page .contact-container .contact-email i , #about_us-page .contact-container .contact-address i {
-margin-right: 10%;
+    margin-right: 10%;
 }
 
+#about_us-page .contact-container .contact-some {
+    margin-top: 80px;
+    display: flex;
+    place-self: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+
+#about_us-page .contact-container .contact-some i {
+    padding: 3%;
+}
 
 /*---------Tablet--------*/
 
 @media only screen and (min-width: 768px) {
+    #about_us-page #contact-mobile {
+        display: none;
+    }
 
+    #about_us-page #contact-tablet-desktop {
+        display: unset;
+    }
+
+    .content-container__tablet-desktop {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        gap: 5%;
+    }
 }
 
+
 /*--------Desktop------*/
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 1024px) {
+    #about_us-page main {
+        padding: 3% 0;
+        max-width: 70%;
+    }
+    
+    .content-container__tablet-desktop {
+        gap: 10%;
+    }
+
+    #about_us-page .contact-container .contact-some {
+        font-size: 25px;
+    }
+}
+
+/*--------Desktop Big------*/
+@media only screen and (min-width: 1440px) { 
 
 }
