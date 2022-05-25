@@ -1,0 +1,13 @@
+#breakfast_page .headline {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#breakfast_page .headline h1 {
+    color: var(--black);
+    text-align: center;
+}
