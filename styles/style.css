@@ -26,7 +26,10 @@ body {
     --offwhite: #f2f2f2;
     --white: #ffffff;
     --black: #000000;
+    --lightgrayInput: #e8e8e8;
+    
 
+    --font-size-xs: clamp(0.4rem, 0.10vw + 0.70rem, 0.80rem);
     --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
@@ -50,6 +53,7 @@ body {
         sans-serif;
     --labeltext: normal normal 400 var(--font-size-sm) / normal "Gudea",
         sans-serif;
+    --inputcaption: normal normal 400 var(--font-size-xs) / normal "Gudea", sans-serif;
 
     --box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
@@ -94,6 +98,15 @@ input {
     text-decoration: none;
 }
 
+legend {
+    font: var(--header2);
+}
+
+.input-caption {
+    font-size: var(--font-size-xs);
+    margin-top: 1%;
+} 
+
 /*-------------------------------------------*/
 /*              GLOBAL CLASSES              */
 /*-------------------------------------------*/
@@ -130,6 +143,10 @@ hr {
 
 .transform {
     transform: rotate(180deg);
+}
+
+fieldset {
+    border: none;
 }
 
 
@@ -177,7 +194,7 @@ svg {
     fill: white;
 }
 
-button {
+button, input {
     border: none;
     background: none;
     cursor: pointer;
@@ -311,7 +328,7 @@ nav#mobile-navigation__collapsiple .link-wrapper {
 .mobile-navigation__search input {
     padding: 5px 10px;
     border-radius: 12px;
-    border: 0.5px solid gray;
+    border: 0.5px solid var(--green);
     background: var(--offwhite);
 }
 
@@ -771,8 +788,8 @@ nav#desktop_navigation {
 .newsletter__bottom input {
     padding: 3.2%;
     border-radius: 50px;
-    border: 0.5px solid gray;
-    background: var(--offwhite);
+    border: 0.5px solid var(--green);
+    background: var(--lightgrayInput);
     width: 80%;
     align-self: center;
 }
@@ -1036,7 +1053,7 @@ footer a:hover {
 .search-modal__content input {
     padding: 3.2%;
     border-radius: 50px;
-    border: 0.5px solid gray;
+    border: 0.5px solid var(--green);
     background: var(--offwhite);
     align-self: center;
     border: 3px solid var(--green);
