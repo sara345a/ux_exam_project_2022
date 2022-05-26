@@ -27,7 +27,7 @@ body {
     --white: #ffffff;
     --black: #000000;
     --lightgrayInput: #e8e8e8;
-    
+
 
     --font-size-xs: clamp(0.4rem, 0.10vw + 0.70rem, 0.80rem);
     --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
@@ -105,7 +105,7 @@ legend {
 .input-caption {
     font-size: var(--font-size-xs);
     margin-top: 1%;
-} 
+}
 
 /*-------------------------------------------*/
 /*              GLOBAL CLASSES              */
@@ -194,7 +194,8 @@ svg {
     fill: white;
 }
 
-button, input {
+button,
+input {
     border: none;
     background: none;
     cursor: pointer;
@@ -1135,7 +1136,7 @@ footer a:hover {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     .add-sidebars {
         display: none !important;
 
