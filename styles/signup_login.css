@@ -1,0 +1,34 @@
+@import url("../styles/style.css");
+
+#body-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-modal {
+    background-color: var(--offwhite);
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.close-button {
+    float: right;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+/*--------Desktop Big------*/
+@media only screen and (min-width: 1440px) { 
+
+}
