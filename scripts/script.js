@@ -46,3 +46,23 @@ function toggleHideSearchModalDesktop() {
     overlay.classList.toggle("hide");
 }
 
+
+
+function toggleAdvancedFilter() {
+    var element = document.getElementById("advanced-filter__content");
+    element.classList.toggle("hide");
+
+    var overlay = document.getElementById("body-overlay");
+    overlay.classList.toggle("hide");
+
+}
+
+
+/*----------------------------------FILTER BUTTONS-----------------------------------------*/
+var element = document.getElementsByClassName("advanced-filter__button");
+element.addEventListener("click", filterBtnsClicked);
+
+function filterBtnsClicked() {
+    var btns = document.getElementsByClassName("advanced-filter__button");
+    btns.classList.toggle("active");
+}
