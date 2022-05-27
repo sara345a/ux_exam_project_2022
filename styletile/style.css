@@ -132,7 +132,7 @@ header {
 }
 
 .color_box__one {
-    background-color: var(--green);
+    background-color: var(--blue);
     height: 60px;
     width: 60px;
     border-radius: 10px;
@@ -146,7 +146,7 @@ header {
 }
 
 .color_box__three {
-    background-color: var(--blue);
+    background-color: var(--green);
     height: 60px;
     width: 60px;
     border-radius: 10px;

@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="profile-page">
     <div id="body-overlay" class="hide"></div>
     <header>
         <div id="mobile_navbar">
@@ -179,7 +179,73 @@
 
 
     <main id="main">
-        
+        <section class="user-information-section">
+            <div class="user-information-first-column">
+                <div>
+                    <img src="../assets/profile_images/hannah.jpg" alt="profile-picture" class="user-profile-picture">
+                </div>
+                <div class="user-information-follow-section">
+                    <div><i class="fa-solid fa-users user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>531 Followers</strong></small></p></div>
+                    <div><i class="fa-solid fa-user-group user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>482 Following</strong></small></p></div>
+                </div>
+            </div>
+            <div class="user-information-second-column">
+                <div class="user-information-name-edit">
+                    <h4>Hannah Wilson</h4>
+                    <a href="edit_profile.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                </div>
+                <a>@HannahBanana</a>
+                <div class="user-information-bio-section">
+                    <h4>Bio</h4>
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+                </div>
+            </div>
+        </section>
+        <div class="add-sidebars-horisontal">
+            <div class="add-sidebars-horisontal__image2">
+                <img src="./assets/vacay.jpg" alt="annonce">
+            </div>
+        </div>
+        <section class="user-collection-section">
+            <h3>Collections</h3>
+            <div class="user-collections-grid">
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-headline">Own</h3>
+                    </div>
+                </div>
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-headline">Liked</h3>
+                    </div>
+                </div>
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <button class="user-collections-delete-button"><i class="fa-solid fa-trash-can delete-icon"></i></button>
+                        <h3 class="user-collection-box-customized-headline">Snacks</h3>
+                        </div>
+                </div>
+                <div class="user-collection-box user-create-collection">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-create-headline">New?</h3>
+                        <form class="user-collection-create-form">
+                            <fieldset>
+                                <div class="input-container">
+                                    <label for="txtCollection">Create a collection</label>
+                                    <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter title here...">
+                                </div>
+                                <a class="collection-submit-button"><input type="submit" value="Create" class="collection-submit-button-value"></a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="add-sidebars-horisontal">
+                <div class="add-sidebars-horisontal__image1">
+                    <img src="./assets/flight.jpg" alt="annonce">
+                </div>
+            </div>
     </main>
 
     <footer>

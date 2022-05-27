@@ -1,1 +1,271 @@
 @import url("../styles/style.css");
+
+#profile-page main {
+    padding: 9% 9%;
+}
+
+/************************USER INFORMATION SECTION STYLE*******************************/
+
+.user-information-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+/***PHOTO AND FOLLOWERS***/
+
+.user-information-section .user-information-first-column {
+    width: 40%;
+}
+
+.user-profile-picture {
+    border-radius: 100%;
+    border:3px solid var(--blue);
+}
+
+.user-information-follow-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.user-information-follow-section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6%;
+    margin-top: 4%;
+}
+
+/***NAME AND BIO***/
+
+.user-information-section .user-information-second-column {
+    width: 55%;
+}
+
+.user-information-section .user-information-second-column .user-information-name-edit {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5%;
+}
+
+.user-information-section .user-information-second-column .user-information-name-edit h4 {
+    padding-bottom: 0;
+}
+
+.user-information-bio-section {
+    margin-top: 10%;
+}
+
+/*********************COLLECTIONS SECTION STYLE***************************/
+
+.user-collections-grid h3, .user-collections-grid h4, .user-collections-grid label, .user-collections-grid button, .user-collections-grid a, .user-collections-grid .collection-submit-button-value  {
+    color: var(--white);
+}
+
+.user-collection-section {
+    margin-top: 5%;
+}
+
+.user-collections-grid {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.user-collection-box {
+    width: 100%;
+    background-color: var(--blue);
+    position: relative;
+    border-radius: 10px;
+}
+
+.user-collection-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.user-collection-box-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-collections-grid .user-collection-box-headline {
+    padding-top: 60px;
+}
+
+.user-collections-grid .user-collection-box-customized-headline {
+    padding-top: 40px;
+}
+
+.user-collections-delete-button {
+    align-self: flex-end;
+    padding: 5px 7px 0 0; 
+}
+
+/***CREATE COLLECTION BOX STYLE***/
+
+.user-collection-create-form {
+    width: 100%;
+}
+
+.user-collection-create-form fieldset {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    max-width: 85%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+.input-container input {
+    margin-top: 10%;
+    padding: 3.3%;
+    border-radius: 50px;
+    border: 0.5px solid var(--green);
+    background-color: var(--lightgrayInput);
+}
+
+.collection-submit-button {
+    margin: 5% 0 5% 0;
+    width: 55%;
+    padding: 3.2%;
+    cursor: pointer;
+    text-align: center;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #6e8b48, #6e8b48, #8aa961, #6e8b48);
+    border-radius: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+.collection-submit-button input {
+    font-weight: 600;
+    color: var(--white);
+}
+
+/*---------Tablet--------*/
+@media only screen and (min-width: 768px) {
+    
+    /************************USER INFORMATION SECTION STYLE*******************************/
+
+    .user-information-follow-section div {
+        width: 100%;
+    }
+
+    .user-information-section .user-information-second-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*********************COLLECTIONS SECTION STYLE***************************/
+
+
+    .user-collections-grid {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 4%;
+        margin-top: 2%;
+    }
+
+    .user-information-follow-section div {
+        gap: 4%;
+        margin-top: 2%;
+    }
+
+    .user-collections-grid .user-collection-box-headline {
+        padding-top: 90px;
+    }
+    
+    .user-collections-grid .user-collection-box-customized-headline {
+        padding-top: 70px;
+    }
+
+    .user-collections-grid .user-collection-box-create-headline{
+        padding-top: 40px;
+    }
+
+}
+
+/*--------Desktop------*/
+@media only screen and (min-width: 1024px) {
+
+    /************************USER INFORMATION SECTION STYLE*******************************/
+
+
+    #profile-page main {
+        padding: 2% 0 2% 0;
+        width: 60%;
+    }
+
+    .user-information-first-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-information-follow-section {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3%;
+        width: 70%;
+    }
+
+
+    /*********************COLLECTIONS SECTION STYLE***************************/
+
+
+    .user-collections-grid {
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 3%;
+        margin-top: 2%;
+    }
+
+    .user-collections-grid .user-collection-box-headline {
+        padding-top: 75px;
+    }
+    
+    .user-collections-grid .user-collection-box-customized-headline {
+        padding-top: 55px;
+    }
+
+    .user-collections-grid .user-collection-box-create-headline{
+        padding-top: 20px;
+    }
+}
+
+/*--------Desktop Big------*/
+@media only screen and (min-width: 1440px) { 
+
+/*********************COLLECTIONS SECTION STYLE***************************/
+
+.user-collections-grid .user-collection-box-headline {
+    padding-top: 85px;
+}
+
+.user-collections-grid .user-collection-box-customized-headline {
+    padding-top: 65px;
+}
+
+.user-collections-grid .user-collection-box-create-headline{
+    padding-top: 30px;
+}
+
+}
