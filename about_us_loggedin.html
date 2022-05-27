@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspiEats</title>
+    <link rel="stylesheet" href="./styles/about_us.css">
+    <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="about_us-page">
+    <div id="body-overlay" class="hide"></div>
+    <header>
+        <div id="mobile_navbar">
+            <nav id="mobile_navigation">
+                <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <div class="mobile_navigation__links">
+                    <button type="button" class="mobile_navigation__icons" onclick="toggleHideSearchModal()">
+                        <i class=" fa-solid fa-magnifying-glass" id="search-modal"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button type="button" class="mobile_navigation__icons">
+                            <a href="profile_loggedin.html"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                        <div class="user-dropdown-content">
+                            <div class="user-dropdown-content__links">
+                                <a href="profile_loggedin.html">My profile</a>
+                                <div class="breakline"></div>
+                                <a href="Submit_recipe_loggedin.html">Submit recipe</a>
+                                <div class="breakline"></div>
+                                <a href="index.html">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="mobile_navigation__icons" onclick="toggleHideBurgermenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <nav id="mobile-navigation__collapsiple" class="hide">
+                <button type="button" class="close-bugermenu" onclick="toggleHideBurgermenu()">Close menu</button>
+                <hr>
+                <ul id="overlay__content">
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <hr>
+                    <li><a href="breakfast.html">Lunch</a></li>
+                    <hr>
+                    <li><a href="breakfast.html">Dinner</a></li>
+                    <hr>
+                    <li><a href="breakfast.html">Snack</a></li>
+                    <hr>
+                    <li><a href="breakfast.html">Dessert</a></li>
+                    <hr>
+                    <div class="link-wrapper">
+                        <li><a href="profile_loggedin.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                        <li><a href="about_us_loggedin.html"><i class="fa-solid fa-circle-info"></i>About us</a></li>
+                    </div>
+                    <hr>
+
+                </ul>
+                <div class="mobile-navigation__search">
+                    <input type="text" placeholder="Search..">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+
+            <div id="mobile-navigation__search-modal" class="hide">
+                <div id="search-modal__overlay" onclick="toggleHideSearchModal()"></div>
+                <div class="search-modal__content">
+                    <input type="text" placeholder="Search..">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="desktop_navbar">
+            <nav id="desktop_navigation">
+                <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <div class="desktop_navigation__textlinks">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a>Recipes
+                                    <i class="fa-solid fa-angle-down" id="mega-menu__icon-down"
+                                        onclick="toggleHideMegaMenu()"></i>
+                                </a>
+                            </li>
+                            <li><a href="about_us_loggedin.html">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="desktop_navigation__links">
+                    <button type="button" class="desktop_navigation__icons" onclick="toggleHideSearchModalDesktop()">
+                        <i class=" fa-solid fa-magnifying-glass" id="search-modal"></i>
+                    </button>
+
+                    <div class="dropdown">
+                        <button type="button" class="desktop_navigation__icons">
+                            <a href="profile_loggedin.html"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                        <div class="user-dropdown-content">
+                            <div class="user-dropdown-content__links">
+                                <a href="profile_loggedin.html">My profile</a>
+                                <div class="breakline"></div>
+                                <a href="submit_recipe_loggedin.html">Submit recipe</a>
+                                <div class="breakline"></div>
+                                <a href="index.html">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </nav>
+
+            <nav id="desktop-navbar__mega-menu" class="hide">
+                <div class="mega-menu__recipe-container">
+                    <h3>Breakfast</h3>
+                    <a href="breakfast.html">
+                        <img src="./assets/breakfast.jpg" alt="breakfast">
+                    </a>
+                </div>
+
+                <div class="mega-menu__recipe-container">
+                    <h3>Lunch</h3>
+                    <a href="breakfast.html">
+                        <img src="./assets/lunch.jpg" alt="lunch">
+                    </a>
+                </div>
+
+                <div class="mega-menu__recipe-container">
+                    <h3>Dinner</h3>
+                    <a href="breakfast.html">
+                        <img src="./assets/dinner.jpg" alt="dinner">
+                    </a>
+                </div>
+
+                <div class="mega-menu__recipe-container">
+                    <h3>Snack</h3>
+                    <a href="breakfast.html">
+                        <img src="./assets/snack.jpg" alt="snack">
+                    </a>
+                </div>
+
+                <div class="mega-menu__recipe-container">
+                    <h3>Dessert</h3>
+                    <a href="breakfast.html">
+                        <img src="./assets/dessert.jpg" alt="dessert">
+                    </a>
+                </div>
+            </nav>
+
+            <div id="desktop-navigation__search-modal" class="hide">
+                <div id="search-modal__overlay" onclick="toggleHideSearchModalDesktop()"></div>
+                <div class="search-modal__content">
+                    <input type="text" placeholder="Search..">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="add-sidebars">
+        <div class="add-sidebars__image">
+            <img src="./assets/cofee-add.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="add-sidebars">
+        <div class="add-sidebars__image2">
+            <img src="./assets/car-add.jpg" alt="">
+        </div>
+    </div>
+
+
+    <main id="main">
+        <section class="content-container__tablet-desktop">
+            <section id="about_us">
+                <h1>ABOUT INSPIEATS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a consectetur massa, id varius justo. Duis vel ultrices felis, vel viverra sem. Duis ultricies metus tincidunt nulla fringilla porta. Morbi lorem turpis, pellentesque a interdum vel, rutrum eget eros. In hac habitasse platea dictumst. Praesent eget nulla dolor. Donec imperdiet mauris sem, at faucibus dolor vehicula in. Cras rhoncus mollis ornare. Aenean pulvinar sem vel rutrum interdum.
+                    <br><br>
+                    Ut posuere velit eu felis elementum, ac dignissim tellus venenatis. Phasellus eu justo viverra magna varius interdum et in nisi. Quisque commodo ac purus et lobortis. Cras elementum metus luctus nibh egestas, sed vestibulum erat rutrum. Sed quis imperdiet est, et elementum nibh. Vestibulum leo mi, lacinia eget ligula eget, iaculis malesuada sapien. Mauris ut varius augue, sed aliquet nulla. Morbi tincidunt nec dolor et consectetur. Nullam consequat ut nibh et bibendum. Aenean nibh turpis, sollicitudin in bibendum sed, placerat nec ex. Quisque vel commodo nisl.
+                </p>
+            </section>
+            <section id="contact-tablet-desktop">
+                <div class="contact-container">
+                    <h3>Contact info</h3>
+                    <div class="contact-telephone">
+                        <a href="tel:+4511223344">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+45 11 22 33 44</p>
+                        </a>
+                    </div>
+                    <div class="contact-email">
+                        <a href="mailto:inspieats@email.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>inspieats&#64;email.com</p>
+                        </a>
+                    </div>
+                    <address class="contact-address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>KEA GULDBERGSGADE
+                            <br>
+                        Guldbergsgade 29N 
+                            <br>
+                        2200 Copenhagen</p>
+                    </address>
+                    <div class="contact-some">
+                        <h4>Connect with us</h4>
+                        <div class="contact-some__icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="add-sidebars-horisontal">
+            <div class="add-sidebars-horisontal__image1">
+                <img src="./assets/flight.jpg" alt="annonce">
+            </div>
+        </div>
+        <section id="contact-mobile">
+            <div class="contact-container">
+                <h3>Contact info</h3>
+                <div class="contact-telephone">
+                    <a href="tel:+4511223344">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+45 11 22 33 44</p>
+                    </a>
+                </div>
+                <div class="contact-email">
+                    <a href="mailto:inspieats@email.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>inspieats&#64;email.com</p>
+                    </a>
+                </div>
+                <address class="contact-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>KEA GULDBERGSGADE
+                        <br>
+                    Guldbergsgade 29N 
+                        <br>
+                    2200 Copenhagen</p>
+                    </address>
+                <div class="contact-some">
+                    <h4>Connect with us</h4>
+                    <div class="contact-some__icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="add-sidebars-horisontal">
+            <div class="add-sidebars-horisontal__image2">
+                <img src="./assets/vacay.jpg" alt="annonce">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="mobile-footer">
+            <section class="newsletter">
+                <div class="newsletter__top">
+                    <h3>Join our newsletter</h3>
+                    <p>Subscribe to our newsletter and be the first to achieve monthly recipes, nice offers
+                        and much more!
+                    </p>
+                </div>
+                <div class="newsletter__bottom">
+                    <input type="text" placeholder="Email">
+                    <button type="button">Subscribe to newsletter</button>
+                </div>
+            </section>
+
+            <section class="footer-collapsiple">
+                <button type="button" onclick="toggleDisplay()"><i class=" fa-solid fa-ellipsis"
+                        id="threedots"></i></button>
+                <div id="footer-collapsiple__content" style="display: none;">
+                    <div class="footer-collapsiple__column1">
+                        <h4>Recipes</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="index_loggedin.html#mostpopular">Most popular</a></li>
+                                <li><a href="index_loggedin.html#newest">Newest</a></li>
+                                <li><a href="index_loggedin.html#bestrated">Best rated</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-collapsiple__column2">
+                        <h4>Links</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="profile_loggedin.html">My profile</a></li>
+                                <li><a href="submit_recipe_loggedin.html">Submit recipe</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-collapsiple__column3">
+                        <h4>Contact</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="about_us_loggedin.html">Contact us</a></li>
+                                <li><a href="about_us_loggedin.html">About us</a></li>
+                                <li><a href="about_us_loggedin.html">Careers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="SoMe-bar">
+                <h3>Connect with us</h3>
+                <div class="SoMe-bar__icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="desktop-footer">
+            <div class="desktop-footer__section-wrapper">
+                <section class="desktop-footer__section1">
+                    <div class="desktop-footer__column1">
+                        <h3>Recipes</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="index_loggedin.html#mostpopular">Most popular</a></li>
+                                <li><a href="index_loggedin.html#newest">Newest</a></li>
+                                <li><a href="index_loggedin.html#bestrated">Best rated</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="desktop-footer__column2">
+                        <h3>Links</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="profile_loggedin.html">My profile</a></li>
+                                <li><a href="submit_recipe_loggedin.html">Submit recipe</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="desktop-footer__column3">
+                        <h3>Contact</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="about_us_loggedin.html">Contact us</a></li>
+                                <li><a href="about_us_loggedin.html">About us</a></li>
+                                <li><a href="about_us_loggedin.html">Careers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section class="desktop-footer__section2">
+                    <div class="section2__logo">
+                        <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                    </div>
+                </section>
+                <section class="desktop-footer__section3">
+                    <div class="newsletter__top">
+                        <h3>Join our newsletter</h3>
+                        <p>Subscribe to our newsletter and be the first to achieve monthly recipes, nice offers
+                            and much more!
+                        </p>
+                    </div>
+                    <div class="newsletter__bottom">
+                        <input type="text" placeholder="Email">
+                        <button type="button">Subscribe to newsletter</button>
+                    </div>
+                </section>
+            </div>
+            <section class="desktop-footer__section4-bottom">
+                <div class="SoMe-bar">
+                    <h3>Connect with us</h3>
+                    <div class="SoMe-bar__icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    </d>
+                </div>
+            </section>
+        </div>
+
+
+    </footer>
+</body>
+
+<script src="./scripts/script.js"></script>
+
+</html>
