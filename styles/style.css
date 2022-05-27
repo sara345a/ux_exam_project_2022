@@ -28,8 +28,8 @@ body {
     --black: #000000;
     --lightgrayInput: #e8e8e8;
 
-
-    --font-size-xs: clamp(0.4rem, 0.10vw + 0.70rem, 0.80rem);
+    --font-size-xxs: clamp(0.4rem, 0.10vw + 0.70rem, 0.80rem);
+    --font-size-xs: clamp(0.4rem, 0.10vw + 0.60rem, 0.80rem);
     --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
@@ -53,7 +53,8 @@ body {
         sans-serif;
     --labeltext: normal normal 400 var(--font-size-sm) / normal "Gudea",
         sans-serif;
-    --inputcaption: normal normal 400 var(--font-size-xs) / normal "Gudea", sans-serif;
+    --smallcaptions: normal normal 400 var(--font-size-xs) / normal "Gudea", sans-serif;
+    --xsmallcaptions: normal normal 400 var(--font-size-xxs) / normal "Gudea", sans-serif;
 
     --box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
@@ -103,9 +104,16 @@ legend {
 }
 
 .input-caption {
-    font-size: var(--font-size-xs);
+    font: var(--smallcaptions);
     margin-top: 1%;
 }
+
+.user-information-follow-count {
+    font: var(--xsmallcaptions);
+    margin-top: 1%;
+}
+
+
 
 /*-------------------------------------------*/
 /*              GLOBAL CLASSES              */

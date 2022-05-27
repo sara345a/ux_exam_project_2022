@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="profile-page">
     <div id="body-overlay" class="hide"></div>
     <header>
         <div id="mobile_navbar">
@@ -179,7 +179,61 @@
 
 
     <main id="main">
-        
+        <section class="user-information-section">
+            <div class="user-information-first-column">
+                <div>
+                    <img src="../assets/profile_images/hannah.jpg" alt="profile-picture" class="user-profile-picture">
+                </div>
+                <div class="user-information-follow-section">
+                    <div><i class="fa-solid fa-users user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>531 Followers</strong></small></p></div>
+                    <div><i class="fa-solid fa-user-group user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>482 Following</strong></small></p></div>
+                </div>
+            </div>
+            <div class="user-information-second-column">
+                <div>
+                    <h4>Hannah Wilson</h4>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <a>@HannahBanana</a>
+                <h3>Bio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section class="user-collection-section">
+            <h2>Collections</h2>
+            <div class="user-collections-grid">
+                <div class="user-collection-box"><h3>Own</h3></div>
+                <div class="user-collection-box"><h3>Liked</h3></div>
+                <div class="user-collection-box">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <h3>Snacks</h3>
+                </div>
+                <div class="user-collection-box">
+                    <form>
+                        <fieldset>
+                            <div class="input-container">
+                                <label for="txtCollection">Create new collection</label>
+                                <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter collection name here...">
+                            </div>
+                            <a class="collection-submit-button"><input type="submit" value="Log in"></a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="ad-section-mobile">
+            <div class="add-sidebars-horisontal">
+                <div class="add-sidebars-horisontal__image2">
+                    <img src="./assets/vacay.jpg" alt="annonce">
+                </div>
+            </div>
+            <div class="add-sidebars-horisontal">
+                <div class="add-sidebars-horisontal__image1">
+                    <img src="./assets/flight.jpg" alt="annonce">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
