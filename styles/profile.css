@@ -1,1 +1,62 @@
 @import url("../styles/style.css");
+
+#profile-page main {
+    padding: 9% 9%;
+}
+
+.user-information-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.user-information-section .user-information-first-column {
+    width: 40%;
+}
+
+.user-profile-picture {
+    border-radius: 100%;
+    border:3px solid var(--blue);
+}
+
+.user-information-follow-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-information-follow-section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-information-section .user-information-second-column {
+    width: 55%;
+}
+
+.user-information-section .user-information-second-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5%;
+}
+
+.user-collection-section {
+    margin-top: 15%;
+}
+
+.user-collections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-collection-box {
+    width: 30%;
+    background-color: var(--green);
+}
+
+.user-collection-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
