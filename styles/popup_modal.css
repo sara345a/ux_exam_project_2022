@@ -69,6 +69,11 @@
     align-self: center;
 }
 
+.modal-submit-button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out
+}
+
 .modal-submit-button input {
     font-weight: 600;
     color: var(--white);

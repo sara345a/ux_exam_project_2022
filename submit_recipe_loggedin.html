@@ -182,22 +182,11 @@
 
 
     <main id="main">
-        <h1>SUBMIT YOUR RECIPE</h1>
-        <section>
-            <section class="submit-recipe-image-section">
-                <form>
-                    <fieldset>
-                        <div class="input-container">
-                            <label for="userImage">Profile picture</label>
-                            <input type="file" id="userImage" name="userImage" placeholder="Import file">
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+        <h1>SUBMIT NEW RECIPE</h1>
             <section class="submit-recipe-information-section">
                 <form>
                     <fieldset>
-                        <div class="submit-recipe-generel-info-column">
+                        <div class="submit-recipe-information-column">
                             <div class="submit-recipe-name-portion-time-difficulty">
                                 <div class="input-container">
                                     <label for="txtRecipeName">Recipe name</label>
@@ -218,7 +207,7 @@
                             </div>
                             <div class="submit-recipe-ingredients-box">
                                 <div class="input-container">
-                                    <label for="ingredientInfo">Enter estimated time in minutes</label>
+                                    <label for="ingredientInfo">Ingredients</label>
                                     <div class="submit-recipe-ingredients-inputs">
                                         <input name="ingredientInfo" id="ingredientInfo" type="number" min="1" max="1000">
                                         <input type="text" id="ingredientInfo" name="ingredientInfo" pattern="([A-Za-z-]+ )+[A-Za-z-]+" placeholder="Enter ingredient here...">
@@ -230,16 +219,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="submit-recipe-directions-column">
+                        <div class="submit-recipe-image-directions-column">
+                            <div class="input-container">
+                                <label for="recipeImage">Recipe picture</label>
+                                <input type="file" id="recipeImage" name="recipeImage" placeholder="Import file">
+                            </div>
                             <div class="input-container">
                                 <label for="txtDirections">Directions</label>
-                                <textarea type="text" id="txtDirections" name="txtDirections" cols="10" rows="5" placeholder="Enter the directions here"></textarea>
+                                <textarea type="text" id="txtDirections" name="txtDirections" cols="10" rows="20" placeholder="Enter the directions here"></textarea>
                             </div>
                         </div>
                     </fieldset>
                 </form>
             </section>
-        </section>
         <a href="recipe_loggedin.html" class="submit-recipe-button"><input type="submit" value="Submit"></a>
     </main>
 
