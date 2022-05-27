@@ -10,8 +10,10 @@
     background-color: var(--offwhite);
     border: 5px solid var(--blue);
     width: 80%;
+    max-height: 90%;
     border-radius: 10px;
     padding: 5% 10%;
+    overflow-y: scroll;
 }
 
 .popup-modal .close-button-container {
@@ -47,6 +49,14 @@
     background-color: var(--lightgrayInput);
 }
 
+.input-container textarea {
+    margin-top: 2%;
+    padding: 3.2%;
+    border-radius: 10px;
+    border: 0.5px solid var(--blue);
+    background-color: var(--lightgrayInput);
+}
+
 .modal-submit-button {
     margin: 10% 0 5% 0;
     width: 50%;
@@ -64,20 +74,31 @@
     color: var(--white);
 }
 
-.redirect-option {
+.after-form-div {
     text-align: center;
     margin-top: 15%; 
 }
 
-.input-container a, .redirect-option a {
+.input-container a, .after-form-div a {
     text-decoration: underline;
     cursor: pointer;
+}
+
+#logo_image-popupmodal {
+    display: none;
+}
+
+.delete-account-link {
+    font: var(--inputcaption);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 
 @media only screen and (min-width: 768px) {
 
-    .redirect-option {
+    .after-form-div {
         margin-top: 10%; 
     }
 
@@ -123,12 +144,27 @@
         width: 100%;
     }
 
+    .modal-submit-button {
+        margin: 5% 0 5% 0;        
+    }
+
+    .delete-account-link {
+        margin-bottom: 5%;
+    }
+
     .popup-modal hr {
         display: none;
     }
 
-    .redirect-option {
+    .after-form-div {
         align-self: center;
+        padding-bottom: 10%;
+    }
+
+    #logo_image-popupmodal {
+        display: unset;
+        width: 50%;
+        margin-bottom: 10%;
     }
 
 }

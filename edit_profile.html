@@ -6,12 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspiEats</title>
-    <link rel="stylesheet" href="../styles/edit_profile.css">
+    <link rel="stylesheet" href="../styles/popup_modal.css">
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="home">
-    <div id="body-overlay"></div>
+    <div id="body-overlay">
+        <section id="signup-modal" class="popup-modal">
+            <div class="close-button-container">
+                <a href="index.html">
+                    <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+                </a>
+            </div>
+            <section>
+                <form action="" method="">
+                    <fieldset>
+                        <h2>EDIT PROFILE</h2>
+                        <div class="input-container">
+                            <label for="userImage">Profile picture</label>
+                            <input type="file" id="userImage" name="userImage" placeholder="Import file">
+                        </div>
+                        <div class="input-container">
+                            <label for="txtEmail">Email</label>
+                            <input type="email" id="txtEmail" name="txtEmail" maxlength="200" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Change your email here...">
+                        </div>
+                        <div class="input-container">
+                            <label for="txtFullName">Full name</label>
+                            <input type="text" id="txtFullName" name="txtFullName" pattern="([A-Za-z-]+ )+[A-Za-z-]+" placeholder="Change your full name here...">
+                        </div>
+                        <div class="input-container">
+                            <label for="txtPassword">Password</label>
+                            <input type="password" id="txtPassword" name="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" title="Must be minimum 8 characters, contain at least one number, one uppercase and one lowercase character" placeholder="Change your password here...">
+                        </div>
+                        <div class="input-container">
+                            <label for="txtPassword">Repeat password</label>
+                            <input type="password" id="txtPassword" name="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" placeholder="Repeat your password here...">
+                        </div>
+                        <div class="input-container">
+                            <label for="txtBio">Bio</label>
+                            <textarea type="text" id="txtBio" name="txtBio" cols="10" rows="5" placeholder="Change your bio here..."></textarea>
+                            </div>
+                        <a href="index.html" class="modal-submit-button"><input type="submit" value="Change"></a>
+                        <a class="delete-account-link">Delete my account</a>
+                    </fieldset>
+                </form>
+                <div class="after-form-div modal-logo">
+                    <a href="index.html"><img src="./assets/logo_secondary.png" alt="LOGO" id="logo_image-popupmodal"></a>
+                </div>
+            </section>
+        </section>
+    </div>
     <header>
         <div id="mobile_navbar">
             <nav id="mobile_navigation">
@@ -179,394 +223,6 @@
 
 
     <main id="main">
-        <section class=" splash-picture">
-            <div class="splash-picture__image">
-                <img src="./assets/ella-olsson-rD3YrnhTmf0-unsplash.jpg" alt="splashpicture">
-            </div>
-
-            <div class="splash-picture__textbox">
-                <h1>InspiEats</h1>
-            </div>
-        </section>
-
-        <section class="carousel-belt">
-            <h3>Popular now</h3>
-            <div class="carousel-belt__items">
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
-                            </div>
-                            <a href="burger.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/popular/burger.jpg" alt="burger">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Burger</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
-                            </div>
-                            <a href="greensmoothie.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/popular/green_smoothie.jpg" alt="smoothie">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Green Smoothie</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
-                            </div>
-                            <a href="lasagne.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/popular/lasagne.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Lasagne</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
-                            </div>
-                            <a href="saladbowl.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/popular/sald_bowl.jpg" alt="salad bowl">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Salad bowl</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <a name='mostpopular'></a>
-        </section>
-
-        <div class="add-sidebars-horisontal">
-            <div class="add-sidebars-horisontal__image1">
-                <img src="./assets/flight.jpg" alt="annonce">
-            </div>
-        </div>
-
-        <section class="carousel-belt">
-            <h3>Newest</h3>
-            <div class="carousel-belt__items">
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>2</p>
-                            </div>
-                            <a href="mangojuice.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/newest/mango_juice.jpg" alt="mango juice">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Mango Juice</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>15</p>
-                            </div>
-                            <a href="nachos.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/newest/nachos.jpg" alt="nachos">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Nachos</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>5</p>
-                            </div>
-                            <a href="steak.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/newest/steak_potato.jpg" alt="steak">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Steak</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>3</p>
-                            </div>
-                            <a href="waffles.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/newest/waffles.jpg" alt="waffles">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Waffles</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a name='newest'></a>
-        </section>
-
-        <div class="add-sidebars-horisontal">
-            <div class="add-sidebars-horisontal__image2">
-                <img src="./assets/vacay.jpg" alt="annonce">
-            </div>
-        </div>
-
-        <section class="carousel-belt">
-            <h3>All time best rated</h3>
-            <div class="carousel-belt__items">
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>1255</p>
-                            </div>
-                            <a href="pizza.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/best-rated/homemade_pizza.jpg" alt="pizza">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Pizza</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>1555</p>
-                            </div>
-                            <a href="sushi.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/best-rated/sushi.jpg" alt="sushi">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Sushi</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>1865</p>
-                            </div>
-                            <a href="tomatobread.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/best-rated/tomato_bread.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>Tomato bread</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-belt__item">
-                    <div class="carousel-belt__item-outer">
-                        <div class="carousel-belt__item-inner">
-
-                            <div class="item__likes">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>2000</p>
-                            </div>
-                            <a href="whitebread.html">
-                                <div class="item__top">
-                                    <div class="item__overlay">
-                                    </div>
-                                    <div class="item__image">
-                                        <img src="./assets/best-rated/white_bread.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="item__bottom">
-                                    <div class="item__text">
-                                        <h4>White bread</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                                            hic.</p>
-                                    </div>
-                                    <button type="button">Read recipe</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a name='bestrated'></a>
-        </section>
     </main>
 
     <footer>
