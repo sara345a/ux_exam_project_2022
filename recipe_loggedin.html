@@ -6,56 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspiEats</title>
-    <link rel="stylesheet" href="../styles/popup_modal.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="home">
-    <div id="body-overlay">
-        <section id="signup-modal" class="popup-modal">
-            <div class="close-button-container">
-                <a href="profile_loggedin.html">
-                    <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
-                </a>
-            </div>
-            <section>
-                <form action="" method="">
-                    <fieldset>
-                        <h2>EDIT PROFILE</h2>
-                        <div class="input-container">
-                            <label for="userImage">Profile picture</label>
-                            <input type="file" id="userImage" name="userImage" placeholder="Import file">
-                        </div>
-                        <div class="input-container">
-                            <label for="txtEmail">Email</label>
-                            <input type="email" id="txtEmail" name="txtEmail" maxlength="200" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Change your email here...">
-                        </div>
-                        <div class="input-container">
-                            <label for="txtFullName">Full name</label>
-                            <input type="text" id="txtFullName" name="txtFullName" pattern="([A-Za-z-]+ )+[A-Za-z-]+" placeholder="Change your full name here...">
-                        </div>
-                        <div class="input-container">
-                            <label for="txtPassword">Password</label>
-                            <input type="password" id="txtPassword" name="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" title="Must be minimum 8 characters, contain at least one number, one uppercase and one lowercase character" placeholder="Change your password here...">
-                        </div>
-                        <div class="input-container">
-                            <label for="txtPassword">Repeat password</label>
-                            <input type="password" id="txtPassword" name="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" placeholder="Repeat your password here...">
-                        </div>
-                        <div class="input-container">
-                            <label for="txtBio">Bio</label>
-                            <textarea type="text" id="txtBio" name="txtBio" cols="10" rows="5" placeholder="Change your bio here..."></textarea>
-                            </div>
-                        <a href="index.html" class="modal-submit-button"><input type="submit" value="Change"></a>
-                        <a class="delete-account-link">Delete my account</a>
-                    </fieldset>
-                </form>
-                <div class="after-form-div modal-logo">
-                    <a href="index_loggedin.html"><img src="./assets/logo_secondary.png" alt="LOGO" id="logo_image-popupmodal"></a>
-                </div>
-            </section>
-        </section>
-    </div>
+<body class="burger">
+    <div id="body-overlay" class="hide"></div>
     <header>
         <div id="mobile_navbar">
             <nav id="mobile_navigation">
@@ -226,73 +182,131 @@
 
 
     <main id="main">
-        <section class="user-information-section">
-            <div class="user-information-first-column">
-                <div>
-                    <img src="../assets/profile_images/hannah.jpg" alt="profile-picture" class="user-profile-picture">
+        <section id="single-recipe">
+            <div class="single-recipe__information">
+                <div class="single-recipe__information-left">
+                    <h1>Burger</h1>
+                    <h4>Made by <a href="profile_another_loggedin.html">@CasperTheMan</a></h4>
+                    <div class="single-recipe__portions">
+                        <label for="single-recipe__portions">Portions:</label>
+                        <input type="number" name="portions" id="single-recipe__portions">
+                    </div>
+                    <h4>Time: 60 min.</h4>
+                    <h4>Difficulty: Easy</h4>
                 </div>
-                <div class="user-information-follow-section">
-                    <div><i class="fa-solid fa-users user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>531 Followers</strong></small></p></div>
-                    <div><i class="fa-solid fa-user-group user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>482 Following</strong></small></p></div>
+
+                <div class="single-recipe__information-right">
+                    <div class="single-recipe__image-container">
+                        <div class="image-container__like-and-plus">
+                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                            <p>155</p>
+                        </div>
+                        <img src="./assets/popular/burger.jpg" alt="burger">
+                    </div>
+                    <div class="single-recipe__share-recipe">
+                        <h4>Share:</h4>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-print"></i></a>
+
+
+                    </div>
                 </div>
             </div>
-            <div class="user-information-second-column">
-                <div class="user-information-name-edit">
-                    <h4>Hannah Wilson</h4>
-                    <a href="edit_profile.html"><i class="fa-solid fa-pen-to-square"></i></a>
-                </div>
-                <a>@HannahBanana</a>
-                <div class="user-information-bio-section">
-                    <h4>Bio</h4>
-                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
-                </div>
+            <div class="single-recipe__ingredients">
+                <h2>Ingredients</h2>
+                <p>Lorem ipsum dolor sit amet.
+
+                    Lorem, ipsum.
+
+                    Lorem ipsum dolor sit.
+
+                    Lorem ipsum dolor sit.
+
+                    Lorem.
+
+                    Lorem, ipsum.
+                </p>
+            </div>
+            <div class="single-recipe__directions">
+                <h2>Directions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptate fugit at vero minus
+
+                    reiciendis fuga, nesciunt perspiciatis autem alias obcaecati ut corrupti delectus incidunt
+                    voluptatem
+                    asperiores dolor dicta aliquam esse non, sed velit ipsum ipsam. Ut excepturi commodi id voluptatum
+
+                    perferendis neque expedita ducimus modi qui? Sunt commodi odit dolores debitis? Voluptas temporibus
+                    esse
+                    error molestias voluptatibus assumenda. Tempore eum nostrum, distinctio illo repudiandae nisi ea qui
+                    ducimus voluptatibus?</p>
             </div>
         </section>
+
         <div class="add-sidebars-horisontal">
-            <div class="add-sidebars-horisontal__image2">
-                <img src="./assets/vacay.jpg" alt="annonce">
+            <div class="add-sidebars-horisontal__image1">
+                <img src="./assets/flight.jpg" alt="annonce">
             </div>
         </div>
-        <section class="user-collection-section">
-            <h3>Collections</h3>
-            <div class="user-collections-grid">
-                <div class="user-collection-box">
-                    <div class="user-collection-box-content">
-                        <h3 class="user-collection-box-headline">Own</h3>
-                    </div>
+
+        <section class="single-recipe__reviews">
+            <h2>Reviews</h2>
+            <div class="single-recipe__reviews-left">
+                <div class="reviews__profile-image">
+                    <img src="./assets/profile_images/hannah.jpg" alt="">
                 </div>
-                <div class="user-collection-box">
-                    <div class="user-collection-box-content">
-                        <h3 class="user-collection-box-headline">Liked</h3>
-                    </div>
-                </div>
-                <div class="user-collection-box">
-                    <div class="user-collection-box-content">
-                        <button class="user-collections-delete-button"><i class="fa-solid fa-trash-can delete-icon"></i></button>
-                        <h3 class="user-collection-box-customized-headline">Snacks</h3>
+
+                <div class="reviews__text">
+                    <div class="reviews__ratings-by">
+                        <a href="profile_loggedin.html">
+                            <p>@HannahBanana</p>
+                        </a>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
-                </div>
-                <div class="user-collection-box user-create-collection">
-                    <div class="user-collection-box-content">
-                        <h3 class="user-collection-box-create-headline">New?</h3>
-                        <form class="user-collection-create-form">
-                            <fieldset>
-                                <div class="input-container">
-                                    <label for="txtCollection">Create a collection</label>
-                                    <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter title here...">
-                                </div>
-                                <a class="collection-submit-button"><input type="submit" value="Create" class="collection-submit-button-value"></a>
-                            </fieldset>
-                        </form>
                     </div>
+                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, placeat.</blockquote>
                 </div>
+                <i class="fa-solid fa-ellipsis"></i>
             </div>
+
+            <div class="single-recipe__reviews-right">
+
+            </div>
+
         </section>
-            <div class="add-sidebars-horisontal">
-                <div class="add-sidebars-horisontal__image1">
-                    <img src="./assets/flight.jpg" alt="annonce">
-                </div>
+
+        <section class="single-recipe__review-recipe">
+            <h2>Review recipe</h2>
+            <div class="review-recipe__textarea">
+                <label for="recipe-review">Review:</label>
+                <textarea id="recipe-review" name="recipe-review" rows="7" cols="40"
+                    placeholder="Type your review here (maximum 350 charathers..)" maxlength="350"></textarea>
             </div>
+            <h4>Rate on a scale from 1 to 5 stars:</h4>
+            <div class="review-recipe__stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <button type="submit" class="review-recipe__submit-button">Submit review</button>
+        </section>
+
+        <div class="add-sidebars-horisontal">
+            <div class="add-sidebars-horisontal__image1">
+                <img src="./assets/flight.jpg" alt="annonce">
+            </div>
+        </div>
+
     </main>
 
     <footer>
