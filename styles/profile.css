@@ -4,6 +4,8 @@
     padding: 9% 9%;
 }
 
+/***USER INFORMATION SECTION STYLE***/
+
 .user-information-section {
     display: flex;
     flex-direction: row;
@@ -22,41 +24,106 @@
 .user-information-follow-section {
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
 }
 
 .user-information-follow-section div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 2%;
 }
 
 .user-information-section .user-information-second-column {
     width: 55%;
 }
 
-.user-information-section .user-information-second-column div {
+.user-information-section .user-information-second-column .user-information-name-edit {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     gap: 5%;
 }
 
+.user-information-section .user-information-second-column .user-information-name-edit h4 {
+    padding-bottom: 0;
+}
+
+.user-information-bio-section {
+    margin-top: 10%;
+}
+
+/***COLLECTIONS SECTION STYLE***/
+
+.user-collections-grid h3, .user-collections-grid h4, .user-collections-grid label, .user-collections-grid button, .user-collections-grid a, .user-collections-grid .collection-submit-button-value  {
+    color: var(--white);
+}
+
 .user-collection-section {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .user-collections-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
 }
 
 .user-collection-box {
-    width: 30%;
-    background-color: var(--green);
+    width: 100%;
+    background-color: var(--blue);
+    position: relative;
+    border-radius: 10px;
 }
 
 .user-collection-box:after {
     content: "";
     display: block;
     padding-bottom: 100%;
+}
+
+.user-collection-box-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-collection-box-content h3 {
+    align-self: center;
+    justify-self: center;
+}
+
+.input-container {
+    width: 85%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input {
+    margin-top: 2%;
+    padding: 3.3%;
+    border-radius: 50px;
+    border: 0.5px solid var(--blue);
+    background-color: var(--lightgrayInput);
+}
+
+.collection-submit-button {
+    margin: 10% 0 5% 0;
+    width: 100%;
+    padding: 3.2%;
+    cursor: pointer;
+    text-align: center;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #6e8b48, #6e8b48, #8aa961, #6e8b48);
+    border-radius: 50px;
+    align-self: center;
+}
+
+.modal-submit-button input {
+    font-weight: 600;
+    color: var(--white);
 }

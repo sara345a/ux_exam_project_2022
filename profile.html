@@ -190,34 +190,44 @@
                 </div>
             </div>
             <div class="user-information-second-column">
-                <div>
+                <div class="user-information-name-edit">
                     <h4>Hannah Wilson</h4>
                     <i class="fa-solid fa-pen-to-square"></i>
                 </div>
                 <a>@HannahBanana</a>
-                <h3>Bio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="user-information-bio-section">
+                    <h4>Bio</h4>
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+                </div>
             </div>
         </section>
         <section class="user-collection-section">
-            <h2>Collections</h2>
+            <h3>Collections</h3>
             <div class="user-collections-grid">
-                <div class="user-collection-box"><h3>Own</h3></div>
-                <div class="user-collection-box"><h3>Liked</h3></div>
                 <div class="user-collection-box">
-                    <i class="fa-solid fa-trash-can"></i>
-                    <h3>Snacks</h3>
+                    <div class="user-collection-box-content"><h3>Own</h3></div>
                 </div>
                 <div class="user-collection-box">
-                    <form>
-                        <fieldset>
-                            <div class="input-container">
-                                <label for="txtCollection">Create new collection</label>
-                                <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter collection name here...">
-                            </div>
-                            <a class="collection-submit-button"><input type="submit" value="Log in"></a>
-                        </fieldset>
-                    </form>
+                    <div class="user-collection-box-content"><h3>Liked</h3></div>
+                    </div>
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <h3>Snacks</h3>
+                        <button class="user-collections-delete-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="user-collection-box user-create-collection">
+                    <div class="user-collection-box-content">
+                        <form>
+                            <fieldset>
+                                <div class="input-container">
+                                    <label for="txtCollection">Create new collection</label>
+                                    <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter collection name here...">
+                                </div>
+                                <a class="collection-submit-button"><input type="submit" value="Create" class="collection-submit-button-value"></a>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
