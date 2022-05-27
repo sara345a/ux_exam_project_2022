@@ -236,11 +236,73 @@
         <section class="filter-and-sort">
             <div class="advanced-filter">
                 <label for="advanved-filter">
-                    <button class="advanced-filter__button">
+                    <button onclick="toggleAdvancedFilter()">
                         <i class="fa-solid fa-filter" name="advanced-filter"></i>
                     </button>
                     Filter
                 </label>
+
+                <div id="advanced-filter__content" class="hide">
+                    <div class="advanced-filter__close" onclick="toggleAdvancedFilter()">
+                        <h3>Filter</h3>
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <p>Choose as many as wanted</p>
+                    <div class="advanced-filter__categories">
+                        <div class="advanced-filter__category">
+                            <h4>Diets</h4>
+                            <div class="advanced-filter__buttons">
+                                <button>Glutenfree</button>
+                                <button>Lactofree</button>
+                                <button>Vegan</button>
+                                <button>Vegetarian</button>
+                                <button>Low calories</button>
+                                <button>High calories</button>
+                            </div>
+                        </div>
+
+                        <div class="advanced-filter__category">
+                            <h4>Season</h4>
+                            <div class="advanced-filter__buttons">
+                                <button>Fall</button>
+                                <button>Spring</button>
+                                <button>Summer</button>
+                                <button>Winter</button>
+                            </div>
+                        </div>
+
+                        <div class="advanced-filter__category">
+                            <h4>Occaison</h4>
+                            <div class="advanced-filter__buttons">
+                                <button>Everyday</button>
+                                <button>Christmas</button>
+                                <button>Thanksgiving</button>
+                            </div>
+                        </div>
+
+
+                        <div class="advanced-filter__category">
+                            <h4>Diffuculty</h4>
+                            <div class="advanced-filter__buttons">
+                                <button>Easy</button>
+                                <button>Medium</button>
+                                <button>Hard</button>
+                            </div>
+                        </div>
+
+                        <div class="advanced-filter__category">
+                            <h4>Time</h4>
+                            <div class="advanced-filter__buttons">
+                                <button>Under 15 mins</button>
+                                <button>30-60 mins</button>
+                                <button>1-2 hours</button>
+                                <button>Above 2 hours</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="show-results">Show results</button>
+                </div>
+
             </div>
 
             <div class="sort-filter">
@@ -263,6 +325,7 @@
             <div class="recipes-grid__recipes">
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -290,6 +353,7 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -317,6 +381,7 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -344,6 +409,63 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="item__likes">
+                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                            <p>155</p>
+                        </div>
+                    </div>
+                    <a href="recipe.html">
+                        <div class="recipe__top">
+                            <div class="recipe__overlay">
+                            </div>
+                            <div class="recipe__image">
+                                <img src="./assets/breakfast-category/breakfast-recipes/smoothiebowl.jpg"
+                                    alt="smoothiebowl">
+                            </div>
+                        </div>
+                        <div class="recipe__bottom">
+                            <div class="recipe__text">
+                                <h4>Smoothie Bowl</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                                    hic.</p>
+                            </div>
+                            <button type="button">Read recipe</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipes-grid__recipe">
+                    <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="item__likes">
+                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                            <p>155</p>
+                        </div>
+                    </div>
+                    <a href="recipe.html">
+                        <div class="recipe__top">
+                            <div class="recipe__overlay">
+                            </div>
+                            <div class="recipe__image">
+                                <img src="./assets/breakfast-category/breakfast-recipes/smoothiebowl.jpg"
+                                    alt="smoothiebowl">
+                            </div>
+                        </div>
+                        <div class="recipe__bottom">
+                            <div class="recipe__text">
+                                <h4>Smoothie Bowl</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                                    hic.</p>
+                            </div>
+                            <button type="button">Read recipe</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipes-grid__recipe">
+                    <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -381,6 +503,7 @@
             <div class="recipes-grid__recipes">
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -408,6 +531,7 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -435,6 +559,7 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
@@ -462,6 +587,63 @@
 
                 <div class="recipes-grid__recipe">
                     <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="item__likes">
+                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                            <p>155</p>
+                        </div>
+                    </div>
+                    <a href="recipe.html">
+                        <div class="recipe__top">
+                            <div class="recipe__overlay">
+                            </div>
+                            <div class="recipe__image">
+                                <img src="./assets/breakfast-category/breakfast-recipes/smoothiebowl.jpg"
+                                    alt="smoothiebowl">
+                            </div>
+                        </div>
+                        <div class="recipe__bottom">
+                            <div class="recipe__text">
+                                <h4>Smoothie Bowl</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                                    hic.</p>
+                            </div>
+                            <button type="button">Read recipe</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipes-grid__recipe">
+                    <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="item__likes">
+                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                            <p>155</p>
+                        </div>
+                    </div>
+                    <a href="recipe.html">
+                        <div class="recipe__top">
+                            <div class="recipe__overlay">
+                            </div>
+                            <div class="recipe__image">
+                                <img src="./assets/breakfast-category/breakfast-recipes/smoothiebowl.jpg"
+                                    alt="smoothiebowl">
+                            </div>
+                        </div>
+                        <div class="recipe__bottom">
+                            <div class="recipe__text">
+                                <h4>Smoothie Bowl</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                                    hic.</p>
+                            </div>
+                            <button type="button">Read recipe</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipes-grid__recipe">
+                    <div class="recipe__like-and-plus">
+                        <i class="fa-solid fa-plus"></i>
                         <div class="item__likes">
                             <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
                             <p>155</p>
