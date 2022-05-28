@@ -86,6 +86,7 @@ i.fa-solid.fa-plus {
     display: flex;
     flex: 1 1 40%;
     flex-direction: column;
+    position: relative;
 }
 
 .single-recipe__share-recipe {
@@ -141,6 +142,64 @@ i.fa-solid.fa-print.review {
 #single-recipe__reviews-section,
 .single-recipe__ingredients {
     margin-top: 40px;
+}
+
+
+.single-recipe__plus-clicked {
+    background: var(--offwhite);
+    box-shadow: var(--box-shadow);
+    padding: 3px;
+    position: absolute;
+    bottom: la;
+    z-index: 4;
+    left: 0;
+    /* right: 0; */
+    top: 0;
+    bottom: 50%;
+    padding: 3%;
+    max-width: 300px;
+    min-height: 400px;
+}
+
+.single-recipe__close {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.plus-clicked__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.plus-clicked__content i.fa-solid.fa-xmark {
+    top: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.collection {
+    padding: 5%;
+    background: var(--green);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.plus-clicked__content h5 {
+    color: var(--white);
+}
+
+#search-for-collection {
+    border: solid 1px;
+    padding: 3%;
+    background: var(--white);
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 /*-------------------------------------------*/
@@ -224,6 +283,7 @@ section.single-recipe__reviews-section {
     flex-direction: column;
     padding: 5%;
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 textarea {
@@ -270,7 +330,9 @@ textarea {
 /*               media query                 */
 /*-------------------------------------------*/
 @media only screen and (min-width: 758px) {
-    .single-recipe__share-recipe a {
+
+    .single-recipe__share-recipe a,
+    .single-recipe__share-recipe button {
         font-size: 30px;
     }
 
@@ -281,6 +343,11 @@ textarea {
 
     main#main {
         padding: 2% 15%;
+    }
+
+    #single-recipe {
+        position: relative;
+        border-radius: 10px;
     }
 }
 
