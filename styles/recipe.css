@@ -205,3 +205,14 @@ textarea {
 .review-recipe__stars i {
     font-size: 30px;
 }
+
+
+
+/*-------------------------------------------*/
+/*               media query                 */
+/*-------------------------------------------*/
+@media only screen and (min-width: 758px) {
+    .single-recipe__share-recipe a {
+        font-size: 30px;
+    }
+}
