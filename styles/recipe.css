@@ -411,7 +411,7 @@ textarea {
     }
 
     .single-recipe__portions input {
-        max-width: 10%;
+        max-width: 20%;
     }
 
     main#main {
@@ -455,6 +455,10 @@ textarea {
 
     main#main {
         padding: 5%;
+    }
+
+    .single-recipe__portions input {
+        max-width: 10%;
     }
 
     #single-recipe__plus-clicked {
