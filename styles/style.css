@@ -5,7 +5,8 @@
 ! USE VARIABLES FROM ROOT
 ! FEEL FREE TO ADD NEEDED VAR TO ROOT
 --------------------------------------------*/
-
+@import url("https://use.typekit.net/mfa8fck.css");
+@import url("https://use.typekit.net/mfa8fck.css");
 
 * {
     margin: 0;
@@ -45,14 +46,11 @@ body {
     --header3: normal normal 700 var(--font-size-md) / normal "museo-slab", serif;
     --header4: normal normal 400 var(--font-size-base) / normal "museo-slab", serif;
     
-    --bodytext: normal normal 400 var(--font-size-base) / normal "Gudea",
-        sans-serif;
-    --buttontext: normal normal 400 var(--font-size-base) / normal "Gudea",
-        sans-serif;
-    --labeltext: normal normal 400 var(--font-size-sm) / normal "Gudea",
-        sans-serif;
-    --smallcaptions: normal normal 400 var(--font-size-xs) / normal "Gudea", sans-serif;
-    --xsmallcaptions: normal normal 400 var(--font-size-xxs) / normal "Gudea", sans-serif;
+    --bodytext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
+    --buttontext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
+    --labeltext: normal normal 400 var(--font-size-sm) / normal "proxima-nova", sans-serif;
+    --smallcaptions: normal normal 400 var(--font-size-xs) / normal "proxima-nova", sans-serif;
+    --xsmallcaptions: normal normal 400 var(--font-size-xxs) / normal "proxima-nova", sans-serif;
 
     --box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
