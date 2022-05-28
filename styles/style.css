@@ -767,6 +767,10 @@ nav#desktop_navigation {
     }
 }
 
+#mobile-footer {
+    color: var(--white);
+}
+
 
 .newsletter {
     display: flex;
