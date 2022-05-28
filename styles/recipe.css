@@ -30,6 +30,7 @@ main#main {
     gap: 10px;
     top: 5px;
     width: 100%;
+    cursor: pointer;
 }
 
 .image-container__like {
@@ -49,6 +50,10 @@ i.fa-solid.fa-plus {
 
 .single-recipe__image-container {
     position: relative;
+}
+
+.single-recipe__image-container img {
+    border-radius: 10px;
 }
 
 .single-recipe__information-left {
