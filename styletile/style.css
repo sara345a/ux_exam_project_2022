@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/mfa8fck.css");
+@import url("https://use.typekit.net/mfa8fck.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -22,18 +25,13 @@
     --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
     /*font-size*/
-    --header1: normal normal 700 var(--font-size-xl) / normal "Crete Round",
-        sans-serif;
-    --header2: normal normal 700 var(--font-size-lg) / normal "Crete Round",
-        sans-serif;
-    --header3: normal normal 400 var(--font-size-md) / normal "Crete Round",
-        sans-serif;
-    --bodytext: normal normal 400 var(--font-size-base) / normal "Gudea",
-        sans-serif;
-    --buttontext: normal normal 400 var(--font-size-base) / normal "Gudea",
-        sans-serif;
-    --labeltext: normal normal 400 var(--font-size-sm) / normal "Gudea",
-        sans-serif;
+    --header1: normal normal 700 var(--font-size-xl) / normal "museo-slab", serif; 
+    --header2: normal normal 700 var(--font-size-lg) / normal "museo-slab", serif; 
+    --header3: normal normal 400 var(--font-size-md) / normal  "museo-slab", serif; 
+
+    --bodytext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
+    --buttontext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
+    --labeltext: normal normal 400 var(--font-size-sm) / normal "proxima-nova", sans-serif;
 }
 
 h1 {
@@ -103,13 +101,14 @@ header {
 #typography__one h3,
 #typography__one p {
     font: none;
-    font-family: 'Crete Round', serif !important;
+    font-family: 'museo-slab', serif !important;
+    font-weight: 700;
 }
 
 #typography__two h3,
 #typography__two p {
     font: none;
-    font-family: 'Gudea', sans-serif !important;
+    font-family: 'proxima-nova', sans-serif !important;
 }
 
 #section__left,
