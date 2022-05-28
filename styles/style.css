@@ -45,7 +45,7 @@ body {
     --header2: normal normal 700 var(--font-size-lg) / normal "museo-slab", serif;
     --header3: normal normal 700 var(--font-size-md) / normal "museo-slab", serif;
     --header4: normal normal 400 var(--font-size-base) / normal "museo-slab", serif;
-    
+
     --bodytext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
     --buttontext: normal normal 400 var(--font-size-base) / normal "proxima-nova", sans-serif;
     --labeltext: normal normal 400 var(--font-size-sm) / normal "proxima-nova", sans-serif;
@@ -632,24 +632,6 @@ nav#desktop_navigation {
     overflow: hidden;
 }
 
-/* .carousel-belt__right-arrow {
-    bottom: 0;
-    padding-right: 20px;
-    position: absolute;
-    right: -2px;
-    top: 0;
-    width: 100px;
-}
-
-.carousel-belt__left-arrow {
-    bottom: 0;
-    left: -1px;
-    padding-left: 20px;
-    position: absolute;
-    top: 0;
-    width: 100px;
-} */
-
 .item__top {
     height: auto;
     width: 100%;
@@ -667,10 +649,6 @@ nav#desktop_navigation {
 
 .item__image img {
     display: block;
-    /* filter: none;
-    height: inherit;
-    max-width: 100%;
-    width: inherit; */
 }
 
 .item__overlay {

@@ -171,11 +171,6 @@ button.show-results {
     background-color: var(--white);
 }
 
-/* i.fa-solid.fa-plus {
-    position: absolute;
-    color: white;
-    z-index: 1;
-} */
 
 .recipe__top {
     height: auto;
@@ -194,10 +189,6 @@ button.show-results {
 
 .recipe__image img {
     display: block;
-    /* filter: none;
-    height: inherit;
-    max-width: 100%;
-    width: inherit; */
     overflow: hidden;
     border-radius: 10px 10px 0 0;
 

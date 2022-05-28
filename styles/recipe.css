@@ -247,6 +247,7 @@ i.fa-solid.fa-print.review {
 
 .plus-clicked__content h5 {
     color: var(--black);
+    font: var(--bodytext);
 }
 
 #search-for-collection {

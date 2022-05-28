@@ -37,7 +37,6 @@ function toggleDisplay() {
     element.classList.toggle("display");
 }
 
-/**/
 function toggleHideSearchModalDesktop() {
     var element = document.getElementById("desktop-navigation__search-modal");
     element.classList.toggle("hide");
