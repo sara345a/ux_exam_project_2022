@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspiEats</title>
-    
+
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="./styles/recipe.css">
 </head>
 
@@ -186,40 +186,47 @@
     <main id="main">
         <section id="single-recipe">
             <div class="single-recipe__information">
-                <div class="single-recipe__information-left">
+                <div class="single-recipe__mobile-header">
                     <h1>Burger</h1>
                     <h4>Made by <a href="profile_another_loggedin.html">@CasperTheMan</a></h4>
-                    <div class="single-recipe__portions">
-                        <label for="single-recipe__portions">Portions:</label>
-                        <input type="number" name="portions" id="single-recipe__portions">
-                        <label for="single-recipe__portions">persons</label>
-                    </div>
-                    <h4>Time: 60 min.</h4>
-                    <h4>Difficulty: Easy</h4>
                 </div>
+                <div class="information__wrapper">
 
-                <div class="single-recipe__information-right">
-                    <div class="single-recipe__image-container">
-                        <div class="image-container__like-and-plus">
-                            <div class="image-container__like">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
+                    <div class="single-recipe__information-top">
+                        <div class="single-recipe__image-container">
+                            <div class="image-container__like-and-plus">
+                                <div class="image-container__like">
+                                    <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                                    <p>155</p>
+                                </div>
                             </div>
+                            <img src="./assets/popular/burger.jpg" alt="burger">
                         </div>
-                        <img src="./assets/popular/burger.jpg" alt="burger">
+                        <div class="single-recipe__share-recipe">
+                            <h4>Share:</h4>
+                            <a href="#"><i class="fa-brands fa-facebook review"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest review"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter review"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram review"></i></a>
+                            <button><i class="fa-solid fa-print review"></i></button>
+                        </div>
                     </div>
-                    <div class="single-recipe__share-recipe">
-                        <h4>Share:</h4>
-                        <a href="#"><i class="fa-brands fa-facebook review"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest review"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter review"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram review"></i></a>
-                        <a href="#"><i class="fa-solid fa-print review"></i></a>
 
-
+                    <div class="single-recipe__information-bottom">
+                        <div class="single-recipe__desktop-header">
+                            <h1>Burger</h1>
+                            <h4>Made by <a href="profile_another_loggedin.html">@CasperTheMan</a></h4>
+                        </div>
+                        <div class="single-recipe__portions">
+                            <label for="single-recipe__portions">Portions:</label>
+                            <input type="number" name="portions" id="single-recipe__portions">
+                        </div>
+                        <h4>Time: 60 min.</h4>
+                        <h4>Difficulty: Easy</h4>
                     </div>
                 </div>
             </div>
+
             <div class="single-recipe__ingredients">
                 <h2>Ingredients</h2>
                 <p>Lorem ipsum dolor sit amet.
@@ -337,6 +344,24 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="single-recipe__review-recipe">
+            <h2>Review recipe</h2>
+            <div class="review-recipe__textarea">
+                <label for="recipe-review">Review:</label>
+                <textarea id="recipe-review" name="recipe-review" rows="7" cols="40"
+                    placeholder="Type your review here (maximum 350 charathers..)" maxlength="350"></textarea>
+            </div>
+            <h4>Rate on a scale from 1 to 5 stars:</h4>
+            <div class="review-recipe__stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <button type="submit" class="review-recipe__submit-button">Submit review</button>
         </section>
 
         <div class="add-sidebars-horisontal">
