@@ -1,0 +1,46 @@
+@import url("../styles/style.css");
+
+#submit-recipe__page main {
+    padding: 9% 9%;
+}
+
+.input-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input {
+    margin-top: 2%;
+    padding: 3.2%;
+    border-radius: 50px;
+    border: 0.5px solid var(--blue);
+    background-color: var(--lightgrayInput);
+}
+
+.input-container textarea {
+    margin-top: 2%;
+    padding: 3.2%;
+    border-radius: 10px;
+    border: 0.5px solid var(--blue);
+    background-color: var(--lightgrayInput);
+}
+
+.
+
+.submit-recipe-button {
+    margin: 10% 0 5% 0;
+    width: 50%;
+    padding: 3.2%;
+    cursor: pointer;
+    text-align: center;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #6e8b48, #6e8b48, #8aa961, #6e8b48);
+    border-radius: 50px;
+    align-self: center;
+}
+
+.submit-recipe-button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out
+}

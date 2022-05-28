@@ -14,7 +14,7 @@
     <div id="body-overlay">
         <section id="signup-modal" class="popup-modal">
             <div class="close-button-container">
-                <a href="profile.html">
+                <a href="profile_loggedin.html">
                     <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
                 </a>
             </div>
@@ -45,13 +45,13 @@
                         <div class="input-container">
                             <label for="txtBio">Bio</label>
                             <textarea type="text" id="txtBio" name="txtBio" cols="10" rows="5" placeholder="Change your bio here..."></textarea>
-                            </div>
+                        </div>
                         <a href="index.html" class="modal-submit-button"><input type="submit" value="Change"></a>
                         <a class="delete-account-link">Delete my account</a>
                     </fieldset>
                 </form>
                 <div class="after-form-div modal-logo">
-                    <a href="index.html"><img src="./assets/logo_secondary.png" alt="LOGO" id="logo_image-popupmodal"></a>
+                    <a href="index_loggedin.html"><img src="./assets/logo_secondary.png" alt="LOGO" id="logo_image-popupmodal"></a>
                 </div>
             </section>
         </section>
@@ -59,20 +59,22 @@
     <header>
         <div id="mobile_navbar">
             <nav id="mobile_navigation">
-                <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                 <div class="mobile_navigation__links">
                     <button type="button" class="mobile_navigation__icons" onclick="toggleHideSearchModal()">
                         <i class=" fa-solid fa-magnifying-glass" id="search-modal"></i>
                     </button>
                     <div class="dropdown">
                         <button type="button" class="mobile_navigation__icons">
-                            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                            <a href="profile_loggedin.html"><i class="fa-solid fa-user"></i></a>
                         </button>
                         <div class="user-dropdown-content">
                             <div class="user-dropdown-content__links">
-                                <a href="login.html">Log in</a>
+                                <a href="profile_loggedin.html">My profile</a>
                                 <div class="breakline"></div>
-                                <a href="signup.html">Sign up</a>
+                                <a href="Submit_recipe_loggedin.html">Submit recipe</a>
+                                <div class="breakline"></div>
+                                <a href="index.html">Log out</a>
                             </div>
                         </div>
                     </div>
@@ -89,19 +91,19 @@
                 <button type="button" class="close-bugermenu" onclick="toggleHideBurgermenu()">Close menu</button>
                 <hr>
                 <ul id="overlay__content">
-                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="recipes_loggedin.html">Breakfast</a></li>
                     <hr>
-                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="recipes_loggedin.html">Lunch</a></li>
                     <hr>
-                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="recipes_loggedin.html">Dinner</a></li>
                     <hr>
-                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="recipes_loggedin.html">Snack</a></li>
                     <hr>
-                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="recipes_loggedin.html">Dessert</a></li>
                     <hr>
                     <div class="link-wrapper">
-                        <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
-                        <li><a href="about_us.html"><i class="fa-solid fa-circle-info"></i>About us</a></li>
+                        <li><a href="profile_loggedin.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                        <li><a href="about_us_loggedin.html"><i class="fa-solid fa-circle-info"></i>About us</a></li>
                     </div>
                     <hr>
 
@@ -123,7 +125,7 @@
 
         <div id="desktop_navbar">
             <nav id="desktop_navigation">
-                <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                 <div class="desktop_navigation__textlinks">
                     <nav>
                         <ul>
@@ -133,8 +135,7 @@
                                         onclick="toggleHideMegaMenu()"></i>
                                 </a>
                             </li>
-                            <li><a href="tipsandtricks.html">Tips & Tricks</a></li>
-                            <li><a href="about_us.html">About us</a></li>
+                            <li><a href="about_us_loggedin.html">About us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -145,13 +146,15 @@
 
                     <div class="dropdown">
                         <button type="button" class="desktop_navigation__icons">
-                            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                            <a href="profile_loggedin.html"><i class="fa-solid fa-user"></i></a>
                         </button>
                         <div class="user-dropdown-content">
                             <div class="user-dropdown-content__links">
-                                <a href="login.html">Log in</a>
+                                <a href="profile_loggedin.html">My profile</a>
                                 <div class="breakline"></div>
-                                <a href="signup.html">Sign up</a>
+                                <a href="submit_recipe_loggedin.html">Submit recipe</a>
+                                <div class="breakline"></div>
+                                <a href="index.html">Log out</a>
                             </div>
                         </div>
                     </div>
@@ -165,35 +168,35 @@
             <nav id="desktop-navbar__mega-menu" class="hide">
                 <div class="mega-menu__recipe-container">
                     <h3>Breakfast</h3>
-                    <a href="breakfast.html">
+                    <a href="recipes_loggedin.html">
                         <img src="./assets/breakfast.jpg" alt="breakfast">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Lunch</h3>
-                    <a href="lunch.html">
+                    <a href="recipes_loggedin.html">
                         <img src="./assets/lunch.jpg" alt="lunch">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Dinner</h3>
-                    <a href="dinner.html">
+                    <a href="recipes_loggedin.html">
                         <img src="./assets/dinner.jpg" alt="dinner">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Snack</h3>
-                    <a href="snack.html">
+                    <a href="recipes_loggedin.html">
                         <img src="./assets/snack.jpg" alt="snack">
                     </a>
                 </div>
 
                 <div class="mega-menu__recipe-container">
                     <h3>Dessert</h3>
-                    <a href="dessert.html">
+                    <a href="recipes_loggedin.html">
                         <img src="./assets/dessert.jpg" alt="dessert">
                     </a>
                 </div>
@@ -223,6 +226,73 @@
 
 
     <main id="main">
+        <section class="user-information-section">
+            <div class="user-information-first-column">
+                <div>
+                    <img src="../assets/profile_images/hannah.jpg" alt="profile-picture" class="user-profile-picture">
+                </div>
+                <div class="user-information-follow-section">
+                    <div><i class="fa-solid fa-users user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>531 Followers</strong></small></p></div>
+                    <div><i class="fa-solid fa-user-group user-information-follow-count"></i> <p class="user-information-follow-count"><small><strong>482 Following</strong></small></p></div>
+                </div>
+            </div>
+            <div class="user-information-second-column">
+                <div class="user-information-name-edit">
+                    <h4>Hannah Wilson</h4>
+                    <a href="edit_profile.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                </div>
+                <a>@HannahBanana</a>
+                <div class="user-information-bio-section">
+                    <h4>Bio</h4>
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+                </div>
+            </div>
+        </section>
+        <div class="add-sidebars-horisontal">
+            <div class="add-sidebars-horisontal__image2">
+                <img src="./assets/vacay.jpg" alt="annonce">
+            </div>
+        </div>
+        <section class="user-collection-section">
+            <h3>Collections</h3>
+            <div class="user-collections-grid">
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-headline">Own</h3>
+                    </div>
+                </div>
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-headline">Liked</h3>
+                    </div>
+                </div>
+                <div class="user-collection-box">
+                    <div class="user-collection-box-content">
+                        <button class="user-collections-delete-button"><i class="fa-solid fa-trash-can delete-icon"></i></button>
+                        <h3 class="user-collection-box-customized-headline">Snacks</h3>
+                        </div>
+                </div>
+                <div class="user-collection-box user-create-collection">
+                    <div class="user-collection-box-content">
+                        <h3 class="user-collection-box-create-headline">New?</h3>
+                        <form class="user-collection-create-form">
+                            <fieldset>
+                                <div class="input-container">
+                                    <label for="txtCollection">Create a collection</label>
+                                    <input type="text" id="txtCollection" name="txtCollection" required maxlength="20" pattern="[A-Za-z]" placeholder="Enter title here...">
+                                </div>
+                                <a class="collection-submit-button"><input type="submit" value="Create" class="collection-submit-button-value"></a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="add-sidebars-horisontal">
+                <div class="add-sidebars-horisontal__image1">
+                    <img src="./assets/flight.jpg" alt="annonce">
+                </div>
+            </div>
     </main>
 
     <footer>
@@ -248,9 +318,9 @@
                         <h4>Recipes</h4>
                         <nav>
                             <ul>
-                                <li><a href="index.html#mostpopular">Most popular</a></li>
-                                <li><a href="index.html#newst">Newest</a></li>
-                                <li><a href="index.html#bestrated">Best rated</a></li>
+                                <li><a href="index_loggedin.html#mostpopular">Most popular</a></li>
+                                <li><a href="index_loggedin.html#newest">Newest</a></li>
+                                <li><a href="index_loggedin.html#bestrated">Best rated</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -258,9 +328,8 @@
                         <h4>Links</h4>
                         <nav>
                             <ul>
-                                <li><a href="login.html">Log in</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="profile_loggedin.html">My profile</a></li>
+                                <li><a href="submit_recipe_loggedin.html">Submit recipe</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -268,9 +337,9 @@
                         <h4>Contact</h4>
                         <nav>
                             <ul>
-                                <li><a href="about_us.html">Contact us</a></li>
-                                <li><a href="about_us.html">About us</a></li>
-                                <li><a href="about_us.html">Careers</a></li>
+                                <li><a href="about_us_loggedin.html">Contact us</a></li>
+                                <li><a href="about_us_loggedin.html">About us</a></li>
+                                <li><a href="about_us_loggedin.html">Careers</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -296,9 +365,9 @@
                         <h3>Recipes</h3>
                         <nav>
                             <ul>
-                                <li><a href="index.html#mostpopular">Most popular</a></li>
-                                <li><a href="index.html#newest">Newest</a></li>
-                                <li><a href="index.html#bestrated">Best rated</a></li>
+                                <li><a href="index_loggedin.html#mostpopular">Most popular</a></li>
+                                <li><a href="index_loggedin.html#newest">Newest</a></li>
+                                <li><a href="index_loggedin.html#bestrated">Best rated</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -306,9 +375,8 @@
                         <h3>Links</h3>
                         <nav>
                             <ul>
-                                <li><a href="login.html">Log in</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="profile_loggedin.html">My profile</a></li>
+                                <li><a href="submit_recipe_loggedin.html">Submit recipe</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -316,16 +384,16 @@
                         <h3>Contact</h3>
                         <nav>
                             <ul>
-                                <li><a href="about_us.html">Contact us</a></li>
-                                <li><a href="about_us.html">About us</a></li>
-                                <li><a href="about_us.html">Careers</a></li>
+                                <li><a href="about_us_loggedin.html">Contact us</a></li>
+                                <li><a href="about_us_loggedin.html">About us</a></li>
+                                <li><a href="about_us_loggedin.html">Careers</a></li>
                             </ul>
                         </nav>
                     </div>
                 </section>
                 <section class="desktop-footer__section2">
                     <div class="section2__logo">
-                        <a href="index.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
+                        <a href="index_loggedin.html"><img src="./assets/logo.png" alt="LOGO" id="logo_image"></a>
                     </div>
                 </section>
                 <section class="desktop-footer__section3">
