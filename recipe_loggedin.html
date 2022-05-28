@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspiEats</title>
-    <link rel="stylesheet" href="../styles/recipe.css">
+    <link rel="stylesheet" href="./styles/recipe.css">
     <script src="https://kit.fontawesome.com/f45613c3c2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -180,67 +180,82 @@
     <main id="main">
         <section id="single-recipe">
             <div class="single-recipe__information">
-                <div class="single-recipe__information-left">
+                <div class="single-recipe__mobile-header">
                     <h1>Burger</h1>
                     <h4>Made by <a href="profile_another_loggedin.html">@CasperTheMan</a></h4>
-                    <div class="single-recipe__portions">
-                        <label for="single-recipe__portions">Portions:</label>
-                        <input type="number" name="portions" id="single-recipe__portions">
-                        <label for="single-recipe__portions">persons</label>
-                    </div>
-                    <h4>Time: 60 min.</h4>
-                    <h4>Difficulty: Easy</h4>
                 </div>
+                <div class="information__wrapper">
 
-                <div class="single-recipe__information-right">
-                    <div class="single-recipe__image-container">
-                        <div class="image-container__like-and-plus">
-                            <i class="fa-solid fa-plus"></i>
-                            <div class="image-container__like">
-                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                                <p>155</p>
+                    <div class="single-recipe__information-top">
+                        <div class="single-recipe__image-container">
+                            <div class="image-container__like-and-plus">
+                                <button onclick="toggleAddToCollection()"><i class="fa-solid fa-plus"></i></button>
+                                <div class="image-container__like">
+                                    <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                                    <p>155</p>
+                                </div>
                             </div>
+                            <img src="./assets/popular/burger.jpg" alt="burger">
                         </div>
-                        <img src="./assets/popular/burger.jpg" alt="burger">
+                        <div class="single-recipe__share-recipe">
+                            <h4>Share:</h4>
+                            <a href="#"><i class="fa-brands fa-facebook review"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest review"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter review"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram review"></i></a>
+                            <button><i class="fa-solid fa-print review"></i></button>
+                        </div>
                     </div>
 
-                    <div class="single-recipe__share-recipe">
-                        <h4>Share:</h4>
-                        <a href="#"><i class="fa-brands fa-facebook review"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest review"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter review"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram review"></i></a>
-                        <button><i class="fa-solid fa-print review"></i></button>
+                    <div class="single-recipe__information-bottom">
+                        <div class="single-recipe__desktop-header">
+                            <h1>Burger</h1>
+                            <h4>Made by <a href="profile_another_loggedin.html">@CasperTheMan</a></h4>
+                        </div>
+                        <div class="single-recipe__portions">
+                            <label for="single-recipe__portions">Portions:</label>
+                            <input type="number" name="portions" id="single-recipe__portions">
+                        </div>
+                        <h4>Time: 60 min.</h4>
+                        <h4>Difficulty: Easy</h4>
                     </div>
                 </div>
             </div>
-            <div class="single-recipe__plus-clicked">
+            <div id="single-recipe__plus-clicked" class="hide">
                 <div class="single-recipe__close">
                     <h3>Add to collection</h3>
-                    <i class="fa-solid fa-xmark"></i>
+                    <button onclick="toggleAddToCollection()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
                 <p>Choose which collection you want to save the recipe in</p>
                 <div class="plus-clicked__content">
                     <input type="search" id="search-for-collection" name="search-for-collection" placeholder="Search..">
+
                     <a href="">
                         <div class="collection">
+                            <img src="./assets/snack.jpg" alt="" class="collection__image">
                             <h5>Snacks</h5>
                         </div>
                     </a>
+                    <div class="collection__suggestions">
+                        <h4>Suggestions</h4>
+                        <p>Create and save to new collection..</p>
+                        <a href="">
+                            <div class="collection">
+                                <img src="./assets/plus.jpg" alt="plus" class="collection__image">
+                                <h5>Dinner</h5>
+                            </div>
+                        </a>
 
-                    <a href="">
-                        <div class="collection">
-                            <h5>Dinner</h5>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="collection">
-                            <h5>Faves</h5>
-                        </div>
-                    </a>
-
-                    <button>Save</button>
+                        <a href="">
+                            <div class="collection">
+                                <img src="./assets/plus.jpg" alt="plus" class="collection__image">
+                                <h5>Faves</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <button type="button" onclick="toggleAddToCollection()" class="collection__savebtn">Save</button>
                 </div>
             </div>
             <div class="single-recipe__ingredients">

@@ -57,12 +57,15 @@ function toggleAdvancedFilter() {
 
 }
 
+function toggleAddToCollection() {
+    var element = document.getElementById("single-recipe__plus-clicked");
+    element.classList.toggle("hide");
 
-/*----------------------------------FILTER BUTTONS-----------------------------------------*/
-var element = document.getElementsByClassName("advanced-filter__button");
-element.addEventListener("click", filterBtnsClicked);
+    var overlay = document.getElementById("body-overlay");
+    overlay.classList.toggle("hide");
 
-function filterBtnsClicked() {
-    var btns = document.getElementsByClassName("advanced-filter__button");
-    btns.classList.toggle("active");
 }
+
+
+
+
