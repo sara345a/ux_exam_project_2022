@@ -39,6 +39,26 @@
 
 /***NAME AND BIO***/
 
+.user-information-button-box button {
+    display: inline-block;
+    margin: 10% 0 5% 0;
+    width: 50%;
+    padding: 3.2%;
+    cursor: pointer;
+    text-align: center;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #6e8b48, #6e8b48, #8aa961, #6e8b48);
+    border-radius: 50px;
+    align-self: center;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.user-information-button-box button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out
+}
+
 .user-information-section .user-information-second-column {
     width: 55%;
 }
