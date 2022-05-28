@@ -369,7 +369,7 @@ nav#mobile-navigation__collapsiple .link-wrapper {
     min-width: 125px;
     box-shadow: var(--box-shadow);
     right: -92px;
-    height: 130px;
+    height: 150px;
     padding: 10px;
     margin-right: 300%;
     top: 20px;
@@ -413,7 +413,7 @@ nav#mobile-navigation__collapsiple .link-wrapper {
 
 @media only screen and (min-width: 1024px) {
     .user-dropdown-content {
-        height: 160px;
+        height: 185px;
         top: 29px;
         left: -30px;
     }
