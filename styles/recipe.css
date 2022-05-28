@@ -29,7 +29,23 @@ main#main {
     display: flex;
     gap: 10px;
     top: 5px;
+    width: 100%;
 }
+
+.image-container__like {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+}
+
+i.fa-solid.fa-plus {
+    position: absolute;
+    left: 25px;
+}
+
 
 .single-recipe__image-container {
     position: relative;
@@ -68,10 +84,44 @@ main#main {
 }
 
 .single-recipe__share-recipe {
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 9px;
+    align-items: center;
+    z-index: 3;
+}
+
+
+i.fa-brands.fa-facebook.review {
+    color: #3b5998;
+    cursor: pointer;
+}
+
+i.fa-brands.fa-pinterest.review {
+    color: #c8232c;
+    cursor: pointer;
+}
+
+i.fa-brands.fa-twitter.review {
+    color: #00acee;
+    cursor: pointer;
+}
+
+i.fa-brands.fa-instagram.review {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+i.fa-solid.fa-print.review {
+    color: var(--black);
+    cursor: pointer;
 }
 
 .single-recipe__ingredients p,
@@ -83,7 +133,7 @@ main#main {
 }
 
 .single-recipe__directions,
-.single-recipe__reviews,
+#single-recipe__reviews-section,
 .single-recipe__ingredients {
     margin-top: 40px;
 }
@@ -91,6 +141,14 @@ main#main {
 /*-------------------------------------------*/
 /*                read reviews               */
 /*-------------------------------------------*/
+
+.single-recipe__reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
 
 .reviews__profile-image {
     display: flex;
@@ -119,7 +177,7 @@ main#main {
     font-size: 20px;
 }
 
-section.single-recipe__reviews {
+section.single-recipe__reviews-section {
     position: relative;
 }
 
@@ -145,18 +203,11 @@ section.single-recipe__reviews {
     gap: 5px;
 }
 
-.filledstar {
-    color: var(--green);
-
+.reviews__text i.fa-solid.fa-star {
+    color: var(--yellow);
 }
 
-i.fa-solid.fa-ellipsis {
-    color: var(--black);
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    cursor: pointer;
-}
+
 
 /*-------------------------------------------*/
 /*               make review                 */
@@ -206,8 +257,8 @@ textarea {
 
 .review-recipe__stars i {
     font-size: 30px;
+    cursor: pointer;
 }
-
 
 
 /*-------------------------------------------*/
@@ -216,5 +267,23 @@ textarea {
 @media only screen and (min-width: 758px) {
     .single-recipe__share-recipe a {
         font-size: 30px;
+    }
+
+
+    .single-recipe__portions input {
+        max-width: 10%;
+    }
+
+    main#main {
+        padding: 2% 15%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    main#main {
+        padding: 5%;
     }
 }

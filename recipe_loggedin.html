@@ -190,6 +190,7 @@
                     <div class="single-recipe__portions">
                         <label for="single-recipe__portions">Portions:</label>
                         <input type="number" name="portions" id="single-recipe__portions">
+                        <label for="single-recipe__portions">persons</label>
                     </div>
                     <h4>Time: 60 min.</h4>
                     <h4>Difficulty: Easy</h4>
@@ -198,18 +199,21 @@
                 <div class="single-recipe__information-right">
                     <div class="single-recipe__image-container">
                         <div class="image-container__like-and-plus">
-                            <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
-                            <p>155</p>
+                            <i class="fa-solid fa-plus"></i>
+                            <div class="image-container__like">
+                                <i class="fa-solid fa-heart" id="like" onclick="addRedColor()"></i>
+                                <p>155</p>
+                            </div>
                         </div>
                         <img src="./assets/popular/burger.jpg" alt="burger">
                     </div>
                     <div class="single-recipe__share-recipe">
                         <h4>Share:</h4>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-solid fa-print"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook review"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest review"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter review"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram review"></i></a>
+                        <a href="#"><i class="fa-solid fa-print review"></i></a>
 
 
                     </div>
@@ -251,36 +255,87 @@
             </div>
         </div>
 
-        <section class="single-recipe__reviews">
+        <section id="single-recipe__reviews-section">
             <h2>Reviews</h2>
-            <div class="single-recipe__reviews-left">
-                <div class="reviews__profile-image">
-                    <img src="./assets/profile_images/hannah.jpg" alt="">
-                </div>
+            <div class="single-recipe__reviews">
+                <div class="single-recipe__review">
+                    <div class="single-recipe__reviews-left">
+                        <div class="reviews__profile-image">
+                            <img src="./assets/profile_images/hannah.jpg" alt="">
+                        </div>
 
-                <div class="reviews__text">
-                    <div class="reviews__ratings-by">
-                        <a href="profile_loggedin.html">
-                            <p>@HannahBanana</p>
-                        </a>
+                        <div class="reviews__text">
+                            <div class="reviews__ratings-by">
+                                <a href="profile_loggedin.html">
+                                    <p>@HannahBanana</p>
+                                </a>
 
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, placeat.
+                            </blockquote>
                         </div>
                     </div>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, placeat.</blockquote>
                 </div>
-                <i class="fa-solid fa-ellipsis"></i>
+
+                <div class="single-recipe__review">
+                    <div class="single-recipe__reviews-left">
+                        <div class="reviews__profile-image">
+                            <img src="./assets/profile_images/hannah.jpg" alt="">
+                        </div>
+
+                        <div class="reviews__text">
+                            <div class="reviews__ratings-by">
+                                <a href="profile_loggedin.html">
+                                    <p>@HannahBanana</p>
+                                </a>
+
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, placeat.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-recipe__review">
+                    <div class="single-recipe__reviews-left">
+                        <div class="reviews__profile-image">
+                            <img src="./assets/profile_images/hannah.jpg" alt="">
+                        </div>
+
+                        <div class="reviews__text">
+                            <div class="reviews__ratings-by">
+                                <a href="profile_loggedin.html">
+                                    <p>@HannahBanana</p>
+                                </a>
+
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, placeat.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="single-recipe__reviews-right">
-
-            </div>
-
         </section>
 
         <section class="single-recipe__review-recipe">
@@ -292,9 +347,9 @@
             </div>
             <h4>Rate on a scale from 1 to 5 stars:</h4>
             <div class="review-recipe__stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
