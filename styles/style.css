@@ -490,7 +490,7 @@ nav#desktop_navigation {
     flex-direction: row;
     justify-content: space-around;
     padding: 2% 6%;
-    background: rgba(187, 210, 238, 0.905);
+    background: rgb(187 210 238 / 98%);
     text-align: center;
     z-index: 100;
     left: 0;
