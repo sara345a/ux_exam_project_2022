@@ -101,6 +101,7 @@
     margin-bottom: 2%;
 }
 
+/*******Tablet*********/
 
 @media only screen and (min-width: 768px) {
 
@@ -110,6 +111,7 @@
 
 }
 
+/***********Desktop*************/
 
 @media only screen and (min-width: 1024px) {
 
@@ -172,10 +174,5 @@
         width: 50%;
         margin-bottom: 10%;
     }
-
-}
-
-/*--------Desktop Big------*/
-@media only screen and (min-width: 1440px) { 
 
 }

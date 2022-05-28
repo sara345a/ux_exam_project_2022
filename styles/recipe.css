@@ -203,7 +203,6 @@ i.fa-solid.fa-print.review {
     justify-content: flex-start;
     align-items: center;
     gap: 30%;
-    /* border: 1px solid var(--green); */
 }
 
 .collection:hover {
@@ -385,6 +384,9 @@ textarea {
 /*-------------------------------------------*/
 /*               media query                 */
 /*-------------------------------------------*/
+
+/***Tablet***/
+
 @media only screen and (max-width: 758px) {
     .single-recipe__mobile-header {
         display: block;
@@ -403,6 +405,7 @@ textarea {
     }
 }
 
+/****Tablet****/
 
 @media only screen and (min-width: 758px) {
 
@@ -450,7 +453,7 @@ textarea {
 
 }
 
-
+/****Desktop****/
 
 @media only screen and (min-width: 1024px) {
 
