@@ -5,7 +5,7 @@
 }
 
 .input-container {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -16,20 +16,39 @@
     border-radius: 50px;
     border: 0.5px solid var(--blue);
     background-color: var(--lightgrayInput);
+    max-width: 100%;
 }
 
 .input-container textarea {
     margin-top: 2%;
+    margin-bottom: 5%;
     padding: 3.2%;
     border-radius: 10px;
     border: 0.5px solid var(--blue);
     background-color: var(--lightgrayInput);
 }
 
-.
+.submit-recipe-ingredients-inputs, .submit-recipe-ingredients-add-new-ingredient {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.submit-recipe-ingredients-add-new-ingredient {
+    margin-top: 5%;
+}
+
+.input-container #numberPortion, .input-container #numberTime, .input-container #txtDifficulty {
+    width: 50%;
+}
+
+.submit-recipe-ingredients-inputs input:first-of-type {
+    width: 20%;
+}
 
 .submit-recipe-button {
-    margin: 10% 0 5% 0;
+    display: inline-block;
+    margin: 5% 0 5% 0;
     width: 50%;
     padding: 3.2%;
     cursor: pointer;
@@ -40,7 +59,48 @@
     align-self: center;
 }
 
+.submit-recipe-button input {
+    font-weight: 600;
+    color: var(--white);
+}
+
 .submit-recipe-button:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out
+}
+
+/*---------Tablet--------*/
+@media only screen and (min-width: 768px) {
+    
+    .input-container {
+        margin-top: 5%;
+    }
+
+}
+
+/*--------Desktop------*/
+@media only screen and (min-width: 1024px) {
+
+    #submit-recipe__page main {
+        padding: 5% 0 2% 0;
+        width: 60%;
+    }
+
+    .submit-recipe-information-section fieldset {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 10%; 
+    }
+
+    .input-container {
+        margin-top: 5%;
+    }
+
+}
+
+/*--------Desktop Big------*/
+@media only screen and (min-width: 1440px) { 
+
+
+
 }
